@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main(int args, char *arg[]) {
+int main(int argc, char *argv[]) {
 
     string instance;
     cout << "Please, input the instance name: ";
@@ -71,7 +71,7 @@ int main(int args, char *arg[]) {
             count = 0;
             int pos = 0;
 
-            while (current_capacity > 0) {
+            while (current_capacity > 0 && remaining_clients > 0) {
                 int min = 999999999;
 
                 // Encontra o cliente mais próximo na linha que não foi visitado.
@@ -82,7 +82,7 @@ int main(int args, char *arg[]) {
                     }
                 }
 
-                cout << "pos: " << pos << " min: " << min << " trucks: " << num_trucks << "\n";
+                cout << "pos: " << pos << " min: " << min << " trucks: " << num_trucks << " current_capacity: " << current_capacity << "\n";
 
                 if (demand[pos] <= current_capacity) {
                     if(!visited_clients[pos]) {
@@ -99,7 +99,8 @@ int main(int args, char *arg[]) {
             }
         }
 
-        for(int i = 1; i < dimension; i++) {
+        for(int i = 1; i < num_trucks; i++) {
+            cout << "Rota do caminhao " << i << ": ";
             for (int j = 0; j < dimension; j++) {
                 if(routes[i][j] > -1) {
                     cout << routes[i][j] << " ";
