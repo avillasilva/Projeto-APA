@@ -49,12 +49,14 @@ int main(int argc, char *argv[]) {
 
         infile.close();
 
-        int routes[dimension][dimension];
+        int routes[dimension][dimension];          // The routes of each truck
+        int cost[dimension];                       // Stores the cost of each truck 
         int remaining_clients = dimension - 1;
-        bool visited_clients[dimension];
-        int num_trucks = 0;
-        int current_pos = 0;
-        int count = 0;
+        bool visited_clients[dimension];           
+        int num_trucks = 0;                        
+        int current_pos = 0;                       // The current position of the current truck
+        int count = 0;                             // The index to the next empty position of the trucks routes
+        int current_capacity;                      // The current capacity of the current truck
 
         for(int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
@@ -62,51 +64,58 @@ int main(int argc, char *argv[]) {
             }
 
             visited_clients[i] = false;
+            cost[i] = 0;
         } 
 
         while (remaining_clients > 0) {
             current_pos = 0;
-            int current_capacity = capacity;
+            current_capacity = capacity;
             num_trucks++;
             count = 0;
             int pos = 0;
 
             while (current_capacity > 0 && remaining_clients > 0) {
+                // The minimun distance begins with a large to number to avoid errors
                 int min = 999999999;
 
-                // Encontra o cliente mais próximo na linha que não foi visitado.
-                for (int i = 0; i < dimension; i++) {
+                // Finds the nearest neighbor that has not been visited
+                for (int i = 1; i < dimension; i++) {
                     if (current_pos != i && ews[current_pos][i] < min && !visited_clients[i]) {
                         min = ews[current_pos][i];
                         pos = i;
                     }
                 }
 
-                cout << "pos: " << pos << " min: " << min << " trucks: " << num_trucks << " current_capacity: " << current_capacity << "\n";
 
                 if (demand[pos] <= current_capacity) {
-                    if(!visited_clients[pos]) {
-                        routes[num_trucks][count] = pos;
-                        count++;
-                        current_capacity -= demand[pos];
-                        visited_clients[pos] = true;
-                        remaining_clients--;
-                        current_pos = pos;
-                    }
+                    routes[num_trucks][count] = pos;
+                    cost[num_trucks] += min;
+                    count++;
+                    current_capacity -= demand[pos];
+                    visited_clients[pos] = true;
+                    remaining_clients--;
+                    current_pos = pos;
+                
+                // If the capacity of the current truck is not suficient,
+                // it will return to the warehouse
                 } else {
+                    cost[num_trucks] += ews[current_pos][0];
                     break;
                 }
             }
         }
 
-        for(int i = 1; i < num_trucks; i++) {
-            cout << "Rota do caminhao " << i << ": ";
+        cout << "\n\n" << "Trucks Required: " << num_trucks << "\n\n";
+
+        for(int i = 1; i <= num_trucks; i++) {
+            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+            cout << "Route of the truck " << i << " : 0 -> ";
             for (int j = 0; j < dimension; j++) {
                 if(routes[i][j] > -1) {
-                    cout << routes[i][j] << " ";
+                    cout << routes[i][j] << " -> ";
                 }
             }
-            cout << "\n";
+            cout << "0\n\n";
         }
     }
 
