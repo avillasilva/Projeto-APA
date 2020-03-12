@@ -10,8 +10,17 @@ int dimension, capacity;
 int *demand, *cost;
 int **adjacency, **routes;
 
-int main(int argc, char *argv[]) {
+struct truck {
+    int cost;
+    int *clients;
+} *trucks;
 
+struct client {
+    int demand;
+    int index;
+} *clients;
+
+int main(int argc, char *argv[]) {
     string instance;
     cout << "Please, input the instance name: ";
     getline(cin,instance);
@@ -30,6 +39,7 @@ int main(int argc, char *argv[]) {
         infile >> capacity;
         infile >> trash; //DEMAND_SECTION
         
+
         demand = new int[dimension];
         
         for (int i = 0; i < dimension; i++) {
@@ -63,6 +73,7 @@ int main(int argc, char *argv[]) {
         int current_pos = 0;                       // The current position of the current truck
         int count = 0;                             // The index to the next empty position of the trucks routes
         int current_capacity;                      // The current capacity of the current truck
+        int numClientsPerTruck[dimension];
 
         for(int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
@@ -110,6 +121,7 @@ int main(int argc, char *argv[]) {
                 }
             }
         }
+
         cout << "\n\n" << "Naive CVRP:" << "\n";
         cout << "\n\n" << "Trucks Required: " << num_trucks << "\n\n";
 
@@ -123,8 +135,6 @@ int main(int argc, char *argv[]) {
             }
             cout << "0\n\n";
         }
-
-
     }
 
     else {
