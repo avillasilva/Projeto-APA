@@ -6,6 +6,9 @@
 #include <sstream>
 
 using namespace std;
+int dimension, capacity;
+int *demand, *cost;
+int **adjacency, **routes;
 
 int main(int argc, char *argv[]) {
 
@@ -13,9 +16,6 @@ int main(int argc, char *argv[]) {
     cout << "Please, input the instance name: ";
     getline(cin,instance);
 
-    int i,j;
-    int dimension;
-    int capacity;
     string trash;
     ifstream infile;
     infile.open("instancias_teste/" + instance);
@@ -30,27 +30,33 @@ int main(int argc, char *argv[]) {
         infile >> capacity;
         infile >> trash; //DEMAND_SECTION
         
-        int demand[dimension];
+        demand = new int[dimension];
         
-        for (i = 0; i < dimension; i++) {
+        for (int i = 0; i < dimension; i++) {
             infile >> trash;  //Index
             infile >> demand[i];
         }
 
-        int ews[dimension][dimension];  
+        adjacency = new int*[dimension];  
+        for(int i=0;i<dimension;i++){
+            adjacency[i] = new int[dimension];
+        }
         
         infile >> trash;  //EDGE_WEIGHT_SECTION
 
-        for(i = 0; i < dimension; i++) {
-            for(j = 0; j < dimension; j++) {
-                infile >> ews[i][j];
+        for(int i = 0; i < dimension; i++) {
+            for(int j = 0; j < dimension; j++) {
+                infile >> adjacency[i][j];
             }
         }
 
         infile.close();
 
-        int routes[dimension][dimension];          // The routes of each truck
-        int cost[dimension];                       // Stores the cost of each truck 
+        routes = new int*[dimension];          // The routes of each truck
+        for(int i=0; i<dimension; i++) {
+            routes[i] = new int[dimension];
+        }
+        cost = new int[dimension];                       // Stores the cost of each truck 
         int remaining_clients = dimension - 1;
         bool visited_clients[dimension];           
         int num_trucks = 0;                        
@@ -80,8 +86,8 @@ int main(int argc, char *argv[]) {
 
                 // Finds the nearest neighbor that has not been visited
                 for (int i = 1; i < dimension; i++) {
-                    if (current_pos != i && ews[current_pos][i] < min && !visited_clients[i]) {
-                        min = ews[current_pos][i];
+                    if (current_pos != i && adjacency[current_pos][i] < min && !visited_clients[i]) {
+                        min = adjacency[current_pos][i];
                         pos = i;
                     }
                 }
@@ -99,12 +105,12 @@ int main(int argc, char *argv[]) {
                 // If the capacity of the current truck is not suficient,
                 // it will return to the warehouse
                 } else {
-                    cost[num_trucks] += ews[current_pos][0];
+                    cost[num_trucks] += adjacency[current_pos][0];
                     break;
                 }
             }
         }
-
+        cout << "\n\n" << "Naive CVRP:" << "\n";
         cout << "\n\n" << "Trucks Required: " << num_trucks << "\n\n";
 
         for(int i = 1; i <= num_trucks; i++) {
@@ -117,6 +123,8 @@ int main(int argc, char *argv[]) {
             }
             cout << "0\n\n";
         }
+
+
     }
 
     else {
