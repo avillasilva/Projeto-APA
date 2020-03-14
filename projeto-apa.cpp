@@ -44,7 +44,17 @@ void intraSwap(int i, int j, int *route, int *newRoute, int length)
 
 void insertion(int i, int j, int *route, int *newRoute, int length)
 {
+    int k;
     
+    for(k = 0; k < j; k++) {
+        newRoute[k] = route[i + 1];
+    }
+
+    newRoute[k] = route[i];
+
+    for(k = j+1; k < length; k++) {
+        newRoute[k] = route[k];
+    }
 }
 
 void copyRoute(int *src, int *dest, int length)
@@ -204,6 +214,28 @@ int main(int argc, char *argv[])
                 for (int k = j + 1; k < numClientsPerTruck[i]; k++)
                 {
                     intraSwap(j, k, routes[i], newRoute, numClientsPerTruck[i]);
+
+                    newCost = calcRouteCost(newRoute, numClientsPerTruck[i]);
+
+                    if (newCost < cost[i])
+                    {
+                        copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
+                        cost[i] = newCost;
+                    }
+                }
+            }
+        }
+
+        for (int i = 1; i <= num_trucks; i++)
+        {    
+            int newCost;
+            int newRoute[numClientsPerTruck[i]];
+
+            for (int j = 0; j < numClientsPerTruck[i]; j++)
+            {
+                for(int k = j + 1; k < numClientsPerTruck[i]; k++)
+                {
+                    insertion(j, k, routes[i], newRoute, numClientsPerTruck[i]);
 
                     newCost = calcRouteCost(newRoute, numClientsPerTruck[i]);
 
