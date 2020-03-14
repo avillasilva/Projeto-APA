@@ -252,10 +252,10 @@ int main(int argc, char *argv[])
         //     }
         // }
 
-        // for (int i = 0; i < num_trucks; i++)
-        // {
-        //     cout << "novo custo: " << cost[i] << "\n";
-        // }
+        for (int i = 0; i < num_trucks; i++)
+        {
+            cout << "novo custo: " << cost[i] << "\n";
+        }
     }
 
     else
