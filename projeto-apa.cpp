@@ -9,7 +9,7 @@
 
 using namespace std;
 int dimension, capacity;
-int *demand, *cost;
+int *demand, *cost, *trucks_load;
 int **adjacency, **routes;
 
 int calcRouteCost(int *route, int length)
@@ -30,12 +30,8 @@ int calcRouteCost(int *route, int length)
     return sum;
 }
 
-void intraSwap(int i, int j, int *route, int *newRoute, int length)
+void internalSwap(int i, int j, int *route, int *newRoute)
 {
-    for (int k = 0; k < length; k++)
-    {
-        newRoute[k] = route[k];
-    }
 
     int aux = newRoute[i];
     newRoute[i] = newRoute[j];
@@ -109,13 +105,13 @@ int main(int argc, char *argv[])
         {
             routes[i] = new int[dimension];
         }
+        trucks_load = new int[dimension];
         cost = new int[dimension]; // Stores the cost of each truck
         int remaining_clients = dimension - 1;
         bool visited_clients[dimension];
         int num_trucks = 0;
         int current_pos = 0;  // The current position of the current truck
         int count = 0;        // The index to the next empty position of the trucks routes
-        int current_capacity; // The current capacity of the current truck
         int numClientsPerTruck[dimension];
 
         for (int i = 0; i < dimension; i++)
@@ -127,17 +123,17 @@ int main(int argc, char *argv[])
 
             visited_clients[i] = false;
             cost[i] = 0;
+            trucks_load[i] = 0;
         }
 
         while (remaining_clients > 0)
         {
-            current_pos = 0;
-            current_capacity = capacity;
             num_trucks++;
+            current_pos = 0;
             count = 0;
             int pos = 0;
 
-            while (current_capacity > 0 && remaining_clients > 0)
+            while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
                 int min = 999999999;
@@ -152,16 +148,17 @@ int main(int argc, char *argv[])
                     }
                 }
 
-                if (demand[pos] <= current_capacity)
+                if (demand[pos] <= capacity - trucks_load[num_trucks])
                 {
                     routes[num_trucks][count] = pos;
                     cost[num_trucks] += min;
                     count++;
-                    current_capacity -= demand[pos];
+                    trucks_load[num_trucks] += demand[pos];
                     visited_clients[pos] = true;
                     remaining_clients--;
                     current_pos = pos;
                     numClientsPerTruck[num_trucks] = count;
+                    
                     // If the capacity of the current truck is not suficient,
                     // it will return to the warehouse
                 }
@@ -174,7 +171,7 @@ int main(int argc, char *argv[])
         }
 
         cout << "\n\n"
-             << "Naive CVRP:"
+             << "*****  Naive CVRP  *****"
              << "\n";
         cout << "\n\n"
              << "Trucks Required: " << num_trucks << "\n\n";
@@ -182,7 +179,7 @@ int main(int argc, char *argv[])
         for (int i = 1; i <= num_trucks; i++)
         {
             cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
             cout << "Route of the truck " << i << " : 0 -> ";
             for (int j = 0; j < dimension; j++)
             {
@@ -203,12 +200,14 @@ int main(int argc, char *argv[])
             {
                 for (int k = j + 1; k < numClientsPerTruck[i]; k++)
                 {
-                    intraSwap(j, k, routes[i], newRoute, numClientsPerTruck[i]);
+                    copyRoute(routes[i], newRoute, numClientsPerTruck[i]);
+                    internalSwap(j, k, routes[i], newRoute);
 
                     newCost = calcRouteCost(newRoute, numClientsPerTruck[i]);
 
                     if (newCost < cost[i])
                     {
+                        cout << "Change in the route " << i << "\n";
                         copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
                         cost[i] = newCost;
                     }
@@ -216,12 +215,13 @@ int main(int argc, char *argv[])
             }
         }
 
-        cout << "***** After Intra-Swap ******:\n\n";
+        cout << "***** After Internal-Swap ******:\n\n";
         
         for (int i = 1; i <= num_trucks; i++)
         {
             cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Truck Load: " << trucks_load[i] << "\n";
             cout << "Route of the truck " << i << " : 0 -> ";
             for (int j = 0; j < dimension; j++)
             {
