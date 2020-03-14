@@ -30,7 +30,7 @@ int calcRouteCost(int *route, int length)
     return sum;
 }
 
-void swap(int i, int j, int *route, int *newRoute, int length)
+void intraSwap(int i, int j, int *route, int *newRoute, int length)
 {
     for (int k = 0; k < length; k++)
     {
@@ -38,8 +38,13 @@ void swap(int i, int j, int *route, int *newRoute, int length)
     }
 
     int aux = newRoute[i];
-    newRoute[i] = route[j];
-    route[j] = aux;
+    newRoute[i] = newRoute[j];
+    newRoute[j] = aux;
+}
+
+void insertion(int i, int j, int *route, int *newRoute, int length)
+{
+    
 }
 
 void copyRoute(int *src, int *dest, int length)
@@ -189,73 +194,44 @@ int main(int argc, char *argv[])
             cout << "0\n\n";
         }
 
-        int newRoute[numClientsPerTruck[1]];
-        int x = rand() % numClientsPerTruck[1];
-        int y = rand() % numClientsPerTruck[1];
-        swap(x, y, routes[1], newRoute, numClientsPerTruck[1]);
+        for (int i = 1; i <= num_trucks; i++)
+        {
+            int newCost;
+            int newRoute[numClientsPerTruck[i]];
 
-        cout << "x: " << x << " y: " << y << "\n";
+            for (int j = 0; j < numClientsPerTruck[i]; j++)
+            {
+                for (int k = j + 1; k < numClientsPerTruck[i]; k++)
+                {
+                    intraSwap(j, k, routes[i], newRoute, numClientsPerTruck[i]);
 
+                    newCost = calcRouteCost(newRoute, numClientsPerTruck[i]);
 
-        cout << "Rota de origem:\n";
-        for (int i = 0; i < numClientsPerTruck[1]; i++) {
-            cout << routes[1][i] << " ";
+                    if (newCost < cost[i])
+                    {
+                        copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
+                        cost[i] = newCost;
+                    }
+                }
+            }
         }
 
-        cout << "\nRota de destino:\n";
-        for (int i = 0; i < numClientsPerTruck[1]; i++) {
-            cout << newRoute[i] << " ";
+        cout << "***** After Intra-Swap ******:\n\n";
+        
+        for (int i = 1; i <= num_trucks; i++)
+        {
+            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+            cout << "number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Route of the truck " << i << " : 0 -> ";
+            for (int j = 0; j < dimension; j++)
+            {
+                if (routes[i][j] > -1)
+                {
+                    cout << routes[i][j] << " -> ";
+                }
+            }
+            cout << "0\n\n";
         }
-        cout << "\n";
-
-        cout << "new cost: " << calcRouteCost(newRoute, numClientsPerTruck[1]) << "\n";
-
-        // for (int i = 1; i <= num_trucks; i++)
-        // {
-        //     if (numClientsPerTruck[i] > 1)
-        //     {
-        //         int newCost;
-        //         int newRoute[numClientsPerTruck[i]];
-        //         int limit = 5;
-
-        //         while (limit >= 0)
-        //         {
-        //             int x = rand() % numClientsPerTruck[i];
-        //             int y = rand() % numClientsPerTruck[i];
-
-        //             swap(x, y, routes[i], newRoute, numClientsPerTruck[i]);
-
-        //             cout << "Rota o\n";
-
-        //             for (int k = 0; k < numClientsPerTruck[i]; k++)
-        //             {
-        //                 cout << routes[i][k] << " ";
-        //             }
-
-        //             cout << "\nRota 1\n";
-        //             for (int k = 0; k < numClientsPerTruck[i]; k++)
-        //             {
-        //                 cout << routes[i][k] << " ";
-        //             }
-
-        //             cout << "\n";
-        //             newCost = calcRouteCost(newRoute, numClientsPerTruck[i]);
-
-        //             if (newCost < cost[i])
-        //             {
-        //                 copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
-        //                 cost[i] = newCost;
-        //             }
-
-        //             limit--;
-        //         }
-        //     }
-        // }
-
-        // for (int i = 0; i < num_trucks; i++)
-        // {
-        //     cout << "novo custo: " << cost[i] << "\n";
-        // }
     }
 
     else
@@ -263,5 +239,5 @@ int main(int argc, char *argv[])
         cout << "Unable to open file! Please, check the instance name.\n";
     }
 
-   return 0;
+    return 0;
 }
