@@ -263,5 +263,5 @@ int main(int argc, char *argv[])
         cout << "Unable to open file! Please, check the instance name.\n";
     }
 
-    return 0;
+   return 0;
 }
