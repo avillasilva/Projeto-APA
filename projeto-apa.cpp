@@ -87,6 +87,17 @@ void printRoute(int *route, int length)
     cout << "\n";
 }
 
+int routeDemand(int *route, int length)
+{
+    int sum = 0;
+    for (int i = 0; i < length; i++)
+    {
+        sum += demand[route[i]];
+    }
+
+    return sum;
+}
+
 int main(int argc, char *argv[])
 {
     string instance;
@@ -336,16 +347,23 @@ int main(int argc, char *argv[])
                         copyRoute(routes[j], newRoute2, numClientsPerTruck[j]);
                         intraSwap(k, l, newRoute1, newRoute2);
 
-                        newCost1 = calcRouteCost(newRoute1, numClientsPerTruck[i]);
-                        newCost2 = calcRouteCost(newRoute2, numClientsPerTruck[j]);
-
-                        if (newCost1 + newCost2 < cost[i] + cost[j])
+                        if (routeDemand(newRoute1, numClientsPerTruck[i]) <= capacity 
+                            && routeDemand(newRoute2, numClientsPerTruck[j]) <= capacity)
                         {
-                            cout << "Change in the routes " << i << " " << j << "\n";
-                            copyRoute(newRoute1, routes[i], numClientsPerTruck[i]);
-                            copyRoute(newRoute2, routes[j], numClientsPerTruck[j]);
-                            cost[i] = newCost1;
-                            cost[j] = newCost2;
+
+                            newCost1 = calcRouteCost(newRoute1, numClientsPerTruck[i]);
+                            newCost2 = calcRouteCost(newRoute2, numClientsPerTruck[j]);
+
+                            if (newCost1 + newCost2 < cost[i] + cost[j])
+                            {
+                                cout << "Change in the routes " << i << " " << j << "\n";
+                                copyRoute(newRoute1, routes[i], numClientsPerTruck[i]);
+                                copyRoute(newRoute2, routes[j], numClientsPerTruck[j]);
+                                cost[i] = newCost1;
+                                cost[j] = newCost2;
+                                trucks_load[i] = routeDemand(newRoute1, numClientsPerTruck[i]);
+                                trucks_load[j] = routeDemand(newRoute2, numClientsPerTruck[j]);
+                            }
                         }
                     }
                 }
