@@ -249,7 +249,7 @@ int main(int argc, char *argv[])
              << "\n";
 
         applyInvertion2opt(num_trucks, routes, numClientsPerTruck, cost);
-        
+
         cout << "======================================"
              << "\n";
 
@@ -274,7 +274,7 @@ int main(int argc, char *argv[])
              << "\n";
 
         applyExternalSwap(num_trucks, routes, numClientsPerTruck, cost, trucks_load);
-        
+
         cout << "======================================"
              << "\n";
 
@@ -294,7 +294,26 @@ int main(int argc, char *argv[])
         }
         cout << "Total Cost: " << totalCost << "\n\n\n";
 
-        
+        int i = 0;
+        int result;
+        while (i < 3)
+        {
+            switch (i) {
+                case 0:
+                    result = applyInternalSwap(num_trucks, routes, numClientsPerTruck, cost);
+                    break;
+
+                case 1:
+                    result = applyExternalSwap(num_trucks, routes, numClientsPerTruck, cost, trucks_load);
+                    break;
+
+                case 2:
+                    result = applyInvertion2opt(num_trucks, routes, numClientsPerTruck, cost);
+                    break;
+            } 
+
+            result ? i = 0 : i++;
+        }
     }
 
     else
