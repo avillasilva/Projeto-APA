@@ -219,81 +219,6 @@ int main(int argc, char *argv[])
         }
         cout << "Total Cost: " << totalCost << "\n\n\n";
 
-        // Internal Swap
-        cout << "======================================"
-             << "\n";
-
-        applyInternalSwap(num_trucks, routes, numClientsPerTruck, cost);
-
-        cout << "======================================"
-             << "\n";
-
-        cout << "\n\n********** After Internal-Swap ***********:\n\n";
-        cout << "Trucks Required: " << num_trucks << "\n\n";
-        totalCost = 0;
-        for (int i = 1; i <= num_trucks; i++)
-        {
-            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-            cout << "Truck Load: " << trucks_load[i] << "\n";
-            cout << "Route of the truck " << i << " : 0 -> ";
-            totalCost += cost[i];
-            printRoute(routes[i], numClientsPerTruck[i]);
-            cout << "-----------------------------------------------------------------------------------------------------"
-                 << "\n";
-        }
-        cout << "Total Cost: " << totalCost << "\n\n\n";
-
-        //Invertion2opt
-        cout << "======================================"
-             << "\n";
-
-        applyInvertion2opt(num_trucks, routes, numClientsPerTruck, cost);
-
-        cout << "======================================"
-             << "\n";
-
-        cout << "\n\n********** After Invertion2opt ***********:\n\n";
-        cout << "Trucks Required: " << num_trucks << "\n\n";
-        totalCost = 0;
-        for (int i = 1; i <= num_trucks; i++)
-        {
-            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-            cout << "Truck Load: " << trucks_load[i] << "\n";
-            cout << "Route of the truck " << i << " : 0 -> ";
-            totalCost += cost[i];
-            printRoute(routes[i], numClientsPerTruck[i]);
-            cout << "-----------------------------------------------------------------------------------------------------"
-                 << "\n";
-        }
-        cout << "Total Cost: " << totalCost << "\n\n\n";
-
-        //External Swap
-        cout << "======================================"
-             << "\n";
-
-        applyExternalSwap(num_trucks, routes, numClientsPerTruck, cost, trucks_load);
-
-        cout << "======================================"
-             << "\n";
-
-        cout << "\n\n********** After External-Swap ***********:\n\n";
-        cout << "Trucks Required: " << num_trucks << "\n\n";
-        totalCost = 0;
-        for (int i = 1; i <= num_trucks; i++)
-        {
-            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-            cout << "Truck Load: " << trucks_load[i] << "\n";
-            cout << "Route of the truck " << i << " : 0 -> ";
-            totalCost += cost[i];
-            printRoute(routes[i], numClientsPerTruck[i]);
-            cout << "-----------------------------------------------------------------------------------------------------"
-                 << "\n";
-        }
-        cout << "Total Cost: " << totalCost << "\n\n\n";
-
         int i = 0;
         int result;
         while (i < 3)
@@ -314,6 +239,22 @@ int main(int argc, char *argv[])
 
             result ? i = 0 : i++;
         }
+
+        cout << "\n\n********** After VND ***********:\n\n";
+        cout << "Trucks Required: " << num_trucks << "\n\n";
+        totalCost = 0;
+        for (int i = 1; i <= num_trucks; i++)
+        {
+            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Truck Load: " << trucks_load[i] << "\n";
+            cout << "Route of the truck " << i << " : 0 -> ";
+            totalCost += cost[i];
+            printRoute(routes[i], numClientsPerTruck[i]);
+            cout << "-----------------------------------------------------------------------------------------------------"
+                 << "\n";
+        }
+        cout << "Total Cost: " << totalCost << "\n\n\n";
     }
 
     else
