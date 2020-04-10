@@ -6,6 +6,9 @@
 #include <sstream>
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
+#include <random>
+#include <ctime>
 
 using namespace std;
 int dimension, capacity;
@@ -170,28 +173,43 @@ int main(int argc, char *argv[])
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
-                int min = 999999999;
+                int mins[5], pos[5];
+                for (int i = 0; i < 5; i++)
+                {
+                    mins[i] = 999999999;
+                }
 
                 // Finds the nearest neighbor that has not been visited
                 for (int i = 1; i < dimension; i++)
                 {
-                    if (current_pos != i && adjacency[current_pos][i] < min && !visited_clients[i])
+                    for (int j = 0; j < 5; j++)
                     {
-                        min = adjacency[current_pos][i];
-                        pos = i;
+                        if (current_pos != i && adjacency[current_pos][i] < mins[j] && !visited_clients[i])
+                        {
+                            mins[j] = adjacency[current_pos][i];
+                            pos[j] = i;
+                        }
                     }
                 }
 
+                // mt19937 mt(1);
+                // uniform_int_distribution<int> linear_i(0, 4);
+                // int trand = linear_i(mt);
+
+                srand(time(NULL));
+                int trand = rand() % 5;
+                cout << trand << "\n";
+
                 // Put the client in the route of the truck and update the variables
-                if (demand[pos] <= capacity - trucks_load[num_trucks])
+                if (demand[pos[trand]] <= capacity - trucks_load[num_trucks])
                 {
-                    routes[num_trucks][count] = pos;
-                    cost[num_trucks] += min;
+                    routes[num_trucks][count] = pos[trand];
+                    cost[num_trucks] += mins[trand];
                     count++;
-                    trucks_load[num_trucks] += demand[pos];
-                    visited_clients[pos] = true;
+                    trucks_load[num_trucks] += demand[pos[trand]];
+                    visited_clients[pos[trand]] = true;
                     remaining_clients--;
-                    current_pos = pos;
+                    current_pos = pos[trand];
                     numClientsPerTruck[num_trucks] = count;
                 }
                 // If the capacity of the current truck is not suficient, it will return to the warehouse
@@ -223,19 +241,20 @@ int main(int argc, char *argv[])
         int result;
         while (i < 3)
         {
-            switch (i) {
-                case 0:
-                    result = applyInternalSwap(num_trucks, routes, numClientsPerTruck, cost);
-                    break;
+            switch (i)
+            {
+            case 0:
+                result = applyInternalSwap(num_trucks, routes, numClientsPerTruck, cost);
+                break;
 
-                case 1:
-                    result = applyExternalSwap(num_trucks, routes, numClientsPerTruck, cost, trucks_load);
-                    break;
+            case 1:
+                result = applyExternalSwap(num_trucks, routes, numClientsPerTruck, cost, trucks_load);
+                break;
 
-                case 2:
-                    result = applyInvertion2opt(num_trucks, routes, numClientsPerTruck, cost);
-                    break;
-            } 
+            case 2:
+                result = applyInvertion2opt(num_trucks, routes, numClientsPerTruck, cost);
+                break;
+            }
 
             result ? i = 0 : i++;
         }
