@@ -83,11 +83,40 @@ void printRoute(int *route, int length);
  */
 int routeDemand(int *route, int length);
 
-int applyInternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost);
+/**
+ * [Method]: applyInternalSwap
+ * [Usage]: Apply the internal swap in the given routes
+ * 
+ * @param  num_trucks           Number of trucks used
+ * @param  routes               Array of routes
+ * @param  numClientsPerTruck   Array containing the number of clients per truck
+ * @param  cost                 Route of a truck
+ */
+int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost);
 
-int applyInvertion2opt(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost);
+/**
+ * [Method]: applyInvertion2opt
+ * [Usage]: Apply the invertion in the given routes
+ * 
+ * @param  num_trucks           Number of trucks used
+ * @param  routes               Array of routes
+ * @param  numClientsPerTruck   Array containing the number of clients per truck
+ * @param  cost                 Route of a truck
+ */
+int applyInvertion2opt(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost);
 
-int applyExternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost, int *trucks_load);
+/**
+ * [Method]: applyInvertion2opt
+ * [Usage]: Apply the invertion in the given routes
+ * 
+ * @param  num_trucks           Number of trucks used
+ * @param  routes               Array of routes
+ * @param  numClientsPerTruck   Array containing the number of clients per truck
+ * @param  cost                 Route of a truck
+ * @param  trucks_load          Array containing the current load of the trucks used
+ */
+int applyExternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost, int *trucks_load);
+
 
 int main(int argc, char *argv[])
 {
@@ -192,13 +221,8 @@ int main(int argc, char *argv[])
                     }
                 }
 
-                // mt19937 mt(1);
-                // uniform_int_distribution<int> linear_i(0, 4);
-                // int trand = linear_i(mt);
-
                 srand(time(NULL));
                 int trand = rand() % 5;
-                cout << trand << "\n";
 
                 // Put the client in the route of the truck and update the variables
                 if (demand[pos[trand]] <= capacity - trucks_load[num_trucks])
@@ -221,24 +245,12 @@ int main(int argc, char *argv[])
             }
         }
 
-        cout << "\n\n**********  Naive CVRP  ********** \n\n";
-        cout << "Trucks Required: " << num_trucks << "\n\n";
         int totalCost = 0;
-        for (int i = 1; i <= num_trucks; i++)
-        {
-            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-            cout << "Truck Load: " << trucks_load[i] << "\n";
-            cout << "Route of the truck " << i;
-            totalCost += cost[i];
-            printRoute(routes[i], numClientsPerTruck[i]);
-            cout << "-----------------------------------------------------------------------------------------------------"
-                 << "\n";
-        }
-        cout << "Total Cost: " << totalCost << "\n\n\n";
 
         int i = 0;
         int result;
+
+        //  VND
         while (i < 3)
         {
             switch (i)
@@ -356,7 +368,7 @@ int routeDemand(int *route, int length)
     return sum;
 }
 
-int applyInternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost)
+int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost)
 {
     int check = 0;
 
@@ -388,7 +400,7 @@ int applyInternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], i
     return check;
 }
 
-int applyInvertion2opt(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost)
+int applyInvertion2opt(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost)
 {
     int check = 0;
 
@@ -420,7 +432,7 @@ int applyInvertion2opt(int num_trucks, int *routes[], int numClientsPerTruck[], 
     return check;
 }
 
-int applyExternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], int *cost, int *trucks_load)
+int applyExternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost, int *trucks_load)
 {
     int check = 0;
 
