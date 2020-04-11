@@ -1,121 +1,4 @@
-#include <stdio.h>
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <vector>
-#include <sstream>
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
-#include <random>
-#include <ctime>
-
-using namespace std;
-int dimension, capacity;
-int *demand, *cost, *trucks_load;
-int **adjacency, **routes;
-
-/**
- * [Method]: calcRouteCost
- * [Usage]: Calculates the total distance traveled by the truck in a given route
- * 
- * @param  route    Route of a truck
- * @param  length   Number of clients served in the route
- */
-int calcRouteCost(int *route, int length);
-
-/**
- * [Method]: internalSwap
- * [Usage]: Swap the position of two clients given a route
- * 
- * @param  i        Index of the first client
- * @param  j        Index of the second client
- * @param  route    Route of a truck
- */
-void internalSwap(int i, int j, int *route);
-
-/**
- * [Method]: invertion2opt
- * [Usage]: Reverse the position of the clients in an interval of a route
- * 
- * @param  i        Index of the first client
- * @param  j        Index of the second client
- * @param  route    Route of a truck
- */
-void invertion2opt(int i, int j, int *route);
-
-/**
- * [Method]: externalSwap
- * [Usage]: Swap the position of two clients given two diferent routes
- * 
- * @param  i        Index of the client in the first route
- * @param  j        Index of the client in the second route
- * @param  route1   Route of a truck
- * @param  route2   Route of a truck
- */
-void externalSwap(int i, int j, int *route1, int *route2);
-
-/**
- * [Method]: copyRoute
- * [Usage]: Copy the route of a truck to another array
- * 
- * @param  src      Source route
- * @param  dest     Destination route
- * @param  length   Number of clients served in the source route
- */
-void copyRoute(int *src, int *dest, int length);
-
-/**
- * [Method]: printRoute
- * [Usage]: Print the clients served in the route
- * 
- * @param  route    Route of a truck
- * @param  length   Number of clients served in the route
- */
-void printRoute(int *route, int length);
-
-/**
- * [Method]: routeDemand
- * [Usage]: Calculates the total demand of the clients served a truck in a given route
- * 
- * @param  route    Route of a truck
- * @param  length   Number of clients served in the route
- */
-int routeDemand(int *route, int length);
-
-/**
- * [Method]: applyInternalSwap
- * [Usage]: Apply the internal swap in the given routes
- * 
- * @param  num_trucks           Number of trucks used
- * @param  routes               Array of routes
- * @param  numClientsPerTruck   Array containing the number of clients per truck
- * @param  cost                 Route of a truck
- */
-int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost);
-
-/**
- * [Method]: applyInvertion2opt
- * [Usage]: Apply the invertion in the given routes
- * 
- * @param  num_trucks           Number of trucks used
- * @param  routes               Array of routes
- * @param  numClientsPerTruck   Array containing the number of clients per truck
- * @param  cost                 Route of a truck
- */
-int applyInvertion2opt(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost);
-
-/**
- * [Method]: applyInvertion2opt
- * [Usage]: Apply the invertion in the given routes
- * 
- * @param  num_trucks           Number of trucks used
- * @param  routes               Array of routes
- * @param  numClientsPerTruck   Array containing the number of clients per truck
- * @param  cost                 Route of a truck
- * @param  trucks_load          Array containing the current load of the trucks used
- */
-int applyExternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, int *cost, int *trucks_load);
+#include "projeto-apa.h"
 
 
 int main(int argc, char *argv[])
@@ -202,16 +85,16 @@ int main(int argc, char *argv[])
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
-                int mins[5], pos[5];
-                for (int i = 0; i < 5; i++)
+                int mins[RAND_NUM], pos[RAND_NUM];
+                for (int i = 0; i < RAND_NUM; i++)
                 {
-                    mins[i] = 999999999;
+                    mins[i] = MAX_INT;
                 }
 
                 // Finds the nearest neighbor that has not been visited
                 for (int i = 1; i < dimension; i++)
                 {
-                    for (int j = 0; j < 5; j++)
+                    for (int j = 0; j < RAND_NUM; j++)
                     {
                         if (current_pos != i && adjacency[current_pos][i] < mins[j] && !visited_clients[i])
                         {
@@ -222,7 +105,7 @@ int main(int argc, char *argv[])
                 }
 
                 srand(time(NULL));
-                int trand = rand() % 5;
+                int trand = rand() % RAND_NUM;
 
                 // Put the client in the route of the truck and update the variables
                 if (demand[pos[trand]] <= capacity - trucks_load[num_trucks])
@@ -250,7 +133,7 @@ int main(int argc, char *argv[])
         int i = 0;
         int result;
 
-        //  VND
+        // VND
         while (i < 3)
         {
             switch (i)
@@ -379,7 +262,7 @@ int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, in
 
         for (int j = 0; j < numClientsPerTruck[i]; j++)
         {
-            for (int k = j + 1; k < numClientsPerTruck[i]; k++)
+            for (int k = 0; k < numClientsPerTruck[i]; k++)
             {
                 copyRoute(routes[i], newRoute, numClientsPerTruck[i]);
                 internalSwap(j, k, newRoute);
