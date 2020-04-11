@@ -9,6 +9,9 @@ int main(int argc, char *argv[])
     srand(time(NULL));
     infile.open(argv[1]);
 
+    clock_t start, end;
+    double cpu_time_used;
+
     // cout << "Please, input the instance name: ";
     // getline(cin, instance);
     // infile.open("instancias_teste/" + instance);
@@ -75,20 +78,20 @@ int main(int argc, char *argv[])
             trucks_load[i] = 0;
         }
 
+        start = clock();
         while (remaining_clients > 0)
         {
             num_trucks++;
             current_pos = 0;
             count = 0;
             int pos = 0;
-
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
-                int min, pos, current_min = 0;;
+                int min, pos, current_min = 0;
                 // Finds the nearest neighbor that has not been visited
-                int mins[5], positions[5];
-                for (int i = 0; i < 5; i++)
+                int mins[RAND_NUM], positions[RAND_NUM];
+                for (int i = 0; i < RAND_NUM; i++)
                 {
                     min = 99999999;
                     for (int j = 1; j < dimension; j++)
@@ -100,20 +103,13 @@ int main(int argc, char *argv[])
                             pos = j;
                         }
                     }
-
+        
                     current_min = min;
                     mins[i] = min;
                     positions[i] = pos;
                 }
-
-                // for (int i = 0; i < 5; i++)
-                // {
-                //     cout << "mins: " << mins[i];
-                //     cout << " postions: " << positions[i] << "\n";
-                // }
                 
                 int trand = rand() % RAND_NUM;
-                // cout << "trand: " << trand << "\n";
                 // Put the client in the route of the truck and update the variables
                 if (demand[positions[trand]] <= capacity - trucks_load[num_trucks])
                 {
@@ -134,13 +130,16 @@ int main(int argc, char *argv[])
                 }
             }
         }
+        end = clock();
+        cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+        cout << "Naive time: " << cpu_time_used << "\n";
 
         int totalCost = 0;
-
         int i = 0;
         int result;
 
         // VND
+        start = clock();
         while (i < 3)
         {
             switch (i)
@@ -160,22 +159,25 @@ int main(int argc, char *argv[])
 
             result ? i = 0 : i++;
         }
+        end = clock();
+        cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+        cout << "VND time: " << cpu_time_used << "\n";
 
-        cout << "\n\n********** After VND ***********:\n\n";
-        cout << "Trucks Required: " << num_trucks << "\n\n";
-        totalCost = 0;
-        for (int i = 1; i <= num_trucks; i++)
-        {
-            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-            cout << "Truck Load: " << trucks_load[i] << "\n";
-            cout << "Route of the truck " << i << " : 0 -> ";
-            totalCost += cost[i];
-            printRoute(routes[i], numClientsPerTruck[i]);
-            cout << "-----------------------------------------------------------------------------------------------------"
-                 << "\n";
-        }
-        cout << "Total Cost: " << totalCost << "\n\n\n";
+        // cout << "\n\n********** After VND ***********:\n\n";
+        // cout << "Trucks Required: " << num_trucks << "\n\n";
+        // totalCost = 0;
+        // for (int i = 1; i <= num_trucks; i++)
+        // {
+        //     cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+        //     cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
+        //     cout << "Truck Load: " << trucks_load[i] << "\n";
+        //     cout << "Route of the truck " << i << " : 0 -> ";
+        //     totalCost += cost[i];
+        //     printRoute(routes[i], numClientsPerTruck[i]);
+        //     cout << "-----------------------------------------------------------------------------------------------------"
+        //          << "\n";
+        // }
+        // cout << "Total Cost: " << totalCost << "\n\n\n";
     }
 
     else
@@ -278,7 +280,6 @@ int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, in
 
                 if (newCost < cost[i])
                 {
-                    cout << "Internal Swap in the route " << i << "\n";
                     copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
                     cost[i] = newCost;
                     check = 1;
@@ -310,7 +311,6 @@ int applyInvertion2opt(int num_trucks, int *routes[], int *numClientsPerTruck, i
 
                 if (newCost < cost[i])
                 {
-                    cout << "Invertion2opt in the route " << i << "\n";
                     copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
                     cost[i] = newCost;
                     check = 1;
@@ -350,7 +350,6 @@ int applyExternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, in
 
                         if (newCost1 + newCost2 < cost[i] + cost[j])
                         {
-                            cout << "External Swap in the routes " << i << " and " << j << "\n";
                             copyRoute(newRoute1, routes[i], numClientsPerTruck[i]);
                             copyRoute(newRoute2, routes[j], numClientsPerTruck[j]);
                             cost[i] = newCost1;
