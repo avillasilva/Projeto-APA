@@ -1,0 +1,1132 @@
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 0
+
+Total Cost: 0
+
+
+
+
+********** After VND ***********:
+
+Trucks Required: 0
+
+Total Cost: 0
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 9
+
+Total cost of the truck 1 : 24
+Number of clients: 1
+Truck Load: 31
+Route of the truck 1: 0 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 42
+Number of clients: 2
+Truck Load: 27
+Route of the truck 2: 0 -> 1 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 3: 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 4: 0 -> 4 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 53
+Number of clients: 2
+Truck Load: 26
+Route of the truck 5: 0 -> 7 -> 5 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 83
+Number of clients: 3
+Truck Load: 33
+Route of the truck 6: 0 -> 13 -> 9 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 2
+Truck Load: 25
+Route of the truck 7: 0 -> 12 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 64
+Number of clients: 1
+Truck Load: 28
+Route of the truck 8: 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 33
+Number of clients: 1
+Truck Load: 16
+Route of the truck 9: 0 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 464
+
+
+External Swap in the routes 5 and 6
+
+
+********** After VND ***********:
+
+Trucks Required: 9
+
+Total cost of the truck 1 : 24
+Number of clients: 1
+Truck Load: 31
+Route of the truck 1 : 0 -> : 0 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 42
+Number of clients: 2
+Truck Load: 27
+Route of the truck 2 : 0 -> : 0 -> 1 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 3 : 0 -> : 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 4 : 0 -> : 0 -> 4 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 62
+Number of clients: 2
+Truck Load: 30
+Route of the truck 5 : 0 -> : 0 -> 14 -> 5 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 68
+Number of clients: 3
+Truck Load: 29
+Route of the truck 6 : 0 -> : 0 -> 13 -> 9 -> 7 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 2
+Truck Load: 25
+Route of the truck 7 : 0 -> : 0 -> 12 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 64
+Number of clients: 1
+Truck Load: 28
+Route of the truck 8 : 0 -> : 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 33
+Number of clients: 1
+Truck Load: 16
+Route of the truck 9 : 0 -> : 0 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 458
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 3
+
+Total cost of the truck 1 : 92
+Number of clients: 7
+Truck Load: 147
+Route of the truck 1: 0 -> 6 -> 2 -> 7 -> 5 -> 18 -> 13 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 143
+Number of clients: 10
+Truck Load: 149
+Route of the truck 2: 0 -> 1 -> 10 -> 12 -> 14 -> 4 -> 11 -> 3 -> 8 -> 16 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 32
+Number of clients: 1
+Truck Load: 14
+Route of the truck 3: 0 -> 9 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 267
+
+
+Internal Swap in the route 1
+Internal Swap in the route 1
+Internal Swap in the route 1
+Internal Swap in the route 2
+Internal Swap in the route 2
+Invertion2opt in the route 2
+Invertion2opt in the route 2
+Invertion2opt in the route 2
+Invertion2opt in the route 2
+
+
+********** After VND ***********:
+
+Trucks Required: 3
+
+Total cost of the truck 1 : 73
+Number of clients: 7
+Truck Load: 147
+Route of the truck 1 : 0 -> : 0 -> 6 -> 2 -> 7 -> 15 -> 13 -> 5 -> 18 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 115
+Number of clients: 10
+Truck Load: 149
+Route of the truck 2 : 0 -> : 0 -> 1 -> 10 -> 8 -> 16 -> 17 -> 3 -> 12 -> 14 -> 11 -> 4 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 32
+Number of clients: 1
+Truck Load: 14
+Route of the truck 3 : 0 -> : 0 -> 9 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 220
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 3
+
+Total cost of the truck 1 : 100
+Number of clients: 8
+Truck Load: 142
+Route of the truck 1: 0 -> 6 -> 19 -> 5 -> 7 -> 2 -> 13 -> 9 -> 16 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 143
+Number of clients: 10
+Truck Load: 149
+Route of the truck 2: 0 -> 1 -> 10 -> 12 -> 15 -> 4 -> 11 -> 3 -> 8 -> 17 -> 18 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 31
+Number of clients: 1
+Truck Load: 19
+Route of the truck 3: 0 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 274
+
+
+Internal Swap in the route 2
+Internal Swap in the route 2
+Invertion2opt in the route 1
+Invertion2opt in the route 2
+Invertion2opt in the route 2
+External Swap in the routes 1 and 3
+Invertion2opt in the route 1
+Invertion2opt in the route 1
+Invertion2opt in the route 2
+Invertion2opt in the route 2
+
+
+********** After VND ***********:
+
+Trucks Required: 3
+
+Total cost of the truck 1 : 94
+Number of clients: 8
+Truck Load: 130
+Route of the truck 1 : 0 -> : 0 -> 2 -> 13 -> 9 -> 16 -> 14 -> 5 -> 7 -> 19 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 115
+Number of clients: 10
+Truck Load: 149
+Route of the truck 2 : 0 -> : 0 -> 1 -> 10 -> 8 -> 17 -> 18 -> 3 -> 12 -> 15 -> 11 -> 4 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 24
+Number of clients: 1
+Truck Load: 31
+Route of the truck 3 : 0 -> : 0 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 233
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 10
+
+Total cost of the truck 1 : 45
+Number of clients: 4
+Truck Load: 32
+Route of the truck 1: 0 -> 21 -> 16 -> 1 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 35
+Number of clients: 2
+Truck Load: 34
+Route of the truck 2: 0 -> 6 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 3: 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 4: 0 -> 4 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 57
+Number of clients: 3
+Truck Load: 36
+Route of the truck 5: 0 -> 7 -> 22 -> 5 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 77
+Number of clients: 3
+Truck Load: 40
+Route of the truck 6: 0 -> 13 -> 9 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 2
+Truck Load: 25
+Route of the truck 7: 0 -> 12 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 62
+Number of clients: 1
+Truck Load: 19
+Route of the truck 8: 0 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 64
+Number of clients: 1
+Truck Load: 28
+Route of the truck 9: 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 49
+Number of clients: 3
+Truck Load: 39
+Route of the truck 10: 0 -> 3 -> 18 -> 19 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 554
+
+
+Internal Swap in the route 1
+External Swap in the routes 2 and 8
+External Swap in the routes 2 and 5
+Internal Swap in the route 5
+
+
+********** After VND ***********:
+
+Trucks Required: 10
+
+Total cost of the truck 1 : 44
+Number of clients: 4
+Truck Load: 32
+Route of the truck 1 : 0 -> : 0 -> 21 -> 16 -> 10 -> 1 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 47
+Number of clients: 2
+Truck Load: 30
+Route of the truck 2 : 0 -> : 0 -> 7 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 3 : 0 -> : 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 4 : 0 -> : 0 -> 4 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 67
+Number of clients: 3
+Truck Load: 40
+Route of the truck 5 : 0 -> : 0 -> 22 -> 14 -> 5 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 77
+Number of clients: 3
+Truck Load: 40
+Route of the truck 6 : 0 -> : 0 -> 13 -> 9 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 2
+Truck Load: 25
+Route of the truck 7 : 0 -> : 0 -> 12 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 24
+Number of clients: 1
+Truck Load: 19
+Route of the truck 8 : 0 -> : 0 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 64
+Number of clients: 1
+Truck Load: 28
+Route of the truck 9 : 0 -> : 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 49
+Number of clients: 3
+Truck Load: 39
+Route of the truck 10 : 0 -> : 0 -> 3 -> 18 -> 19 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 537
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 5
+
+Total cost of the truck 1 : 96
+Number of clients: 8
+Truck Load: 135
+Route of the truck 1: 0 -> 12 -> 5 -> 38 -> 9 -> 16 -> 2 -> 29 -> 21 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 113
+Number of clients: 10
+Truck Load: 135
+Route of the truck 2: 0 -> 27 -> 1 -> 32 -> 11 -> 22 -> 28 -> 31 -> 8 -> 26 -> 7 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 91
+Number of clients: 8
+Truck Load: 136
+Route of the truck 3: 0 -> 6 -> 14 -> 25 -> 18 -> 4 -> 17 -> 37 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 166
+Number of clients: 9
+Truck Load: 148
+Route of the truck 4: 0 -> 23 -> 24 -> 43 -> 13 -> 41 -> 19 -> 42 -> 44 -> 33 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 205
+Number of clients: 9
+Truck Load: 138
+Route of the truck 5: 0 -> 10 -> 30 -> 34 -> 39 -> 20 -> 35 -> 36 -> 3 -> 40 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 671
+
+
+Internal Swap in the route 1
+Internal Swap in the route 2
+Internal Swap in the route 3
+Internal Swap in the route 4
+External Swap in the routes 3 and 4
+Invertion2opt in the route 2
+
+
+********** After VND ***********:
+
+Trucks Required: 5
+
+Total cost of the truck 1 : 86
+Number of clients: 8
+Truck Load: 135
+Route of the truck 1 : 0 -> : 0 -> 12 -> 5 -> 38 -> 9 -> 16 -> 21 -> 29 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 102
+Number of clients: 10
+Truck Load: 135
+Route of the truck 2 : 0 -> : 0 -> 27 -> 7 -> 26 -> 8 -> 31 -> 28 -> 22 -> 1 -> 32 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 88
+Number of clients: 8
+Truck Load: 142
+Route of the truck 3 : 0 -> : 0 -> 6 -> 14 -> 25 -> 18 -> 4 -> 17 -> 44 -> 37 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 159
+Number of clients: 9
+Truck Load: 142
+Route of the truck 4 : 0 -> : 0 -> 23 -> 43 -> 24 -> 13 -> 41 -> 19 -> 42 -> 15 -> 33 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 205
+Number of clients: 9
+Truck Load: 138
+Route of the truck 5 : 0 -> : 0 -> 10 -> 30 -> 34 -> 39 -> 20 -> 35 -> 36 -> 3 -> 40 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 640
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 34
+Number of clients: 4
+Truck Load: 87
+Route of the truck 1: 0 -> 26 -> 12 -> 40 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 37
+Number of clients: 4
+Truck Load: 92
+Route of the truck 2: 0 -> 4 -> 34 -> 46 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 56
+Number of clients: 5
+Truck Load: 100
+Route of the truck 3: 0 -> 6 -> 2 -> 30 -> 48 -> 29 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 63
+Number of clients: 4
+Truck Load: 71
+Route of the truck 4: 0 -> 7 -> 35 -> 19 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 85
+Number of clients: 6
+Truck Load: 93
+Route of the truck 5: 0 -> 45 -> 27 -> 13 -> 15 -> 5 -> 37 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 77
+Number of clients: 5
+Truck Load: 89
+Route of the truck 6: 0 -> 33 -> 1 -> 43 -> 41 -> 42 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 58
+Number of clients: 4
+Truck Load: 75
+Route of the truck 7: 0 -> 16 -> 3 -> 44 -> 32 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 93
+Number of clients: 5
+Truck Load: 99
+Route of the truck 8: 0 -> 39 -> 9 -> 25 -> 18 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 79
+Number of clients: 4
+Truck Load: 88
+Route of the truck 9: 0 -> 28 -> 21 -> 47 -> 36 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 70
+Number of clients: 3
+Truck Load: 87
+Route of the truck 10: 0 -> 10 -> 38 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 170
+Number of clients: 5
+Truck Load: 70
+Route of the truck 11: 0 -> 49 -> 23 -> 22 -> 20 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 822
+
+
+Internal Swap in the route 4
+Internal Swap in the route 5
+Internal Swap in the route 9
+Invertion2opt in the route 5
+
+
+********** After VND ***********:
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 34
+Number of clients: 4
+Truck Load: 87
+Route of the truck 1 : 0 -> : 0 -> 26 -> 12 -> 40 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 37
+Number of clients: 4
+Truck Load: 92
+Route of the truck 2 : 0 -> : 0 -> 4 -> 34 -> 46 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 56
+Number of clients: 5
+Truck Load: 100
+Route of the truck 3 : 0 -> : 0 -> 6 -> 2 -> 30 -> 48 -> 29 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 62
+Number of clients: 4
+Truck Load: 71
+Route of the truck 4 : 0 -> : 0 -> 7 -> 14 -> 19 -> 35 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 75
+Number of clients: 6
+Truck Load: 93
+Route of the truck 5 : 0 -> : 0 -> 45 -> 5 -> 37 -> 15 -> 13 -> 27 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 77
+Number of clients: 5
+Truck Load: 89
+Route of the truck 6 : 0 -> : 0 -> 33 -> 1 -> 43 -> 41 -> 42 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 58
+Number of clients: 4
+Truck Load: 75
+Route of the truck 7 : 0 -> : 0 -> 16 -> 3 -> 44 -> 32 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 93
+Number of clients: 5
+Truck Load: 99
+Route of the truck 8 : 0 -> : 0 -> 39 -> 9 -> 25 -> 18 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 77
+Number of clients: 4
+Truck Load: 88
+Route of the truck 9 : 0 -> : 0 -> 28 -> 21 -> 36 -> 47 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 70
+Number of clients: 3
+Truck Load: 87
+Route of the truck 10 : 0 -> : 0 -> 10 -> 38 -> 11 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 170
+Number of clients: 5
+Truck Load: 70
+Route of the truck 11 : 0 -> : 0 -> 49 -> 23 -> 22 -> 20 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 809
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 12
+
+Total cost of the truck 1 : 54
+Number of clients: 6
+Truck Load: 80
+Route of the truck 1: 0 -> 46 -> 12 -> 47 -> 4 -> 17 -> 37 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 51
+Number of clients: 5
+Truck Load: 68
+Route of the truck 2: 0 -> 27 -> 1 -> 32 -> 11 -> 38 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 76
+Number of clients: 5
+Truck Load: 73
+Route of the truck 3: 0 -> 6 -> 48 -> 8 -> 26 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 62
+Number of clients: 5
+Truck Load: 75
+Route of the truck 4: 0 -> 5 -> 49 -> 9 -> 50 -> 16 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 43
+Number of clients: 2
+Truck Load: 62
+Route of the truck 5: 0 -> 18 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 78
+Number of clients: 4
+Truck Load: 70
+Route of the truck 6: 0 -> 2 -> 29 -> 21 -> 34 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 80
+Number of clients: 4
+Truck Load: 66
+Route of the truck 7: 0 -> 22 -> 28 -> 3 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 77
+Number of clients: 4
+Truck Load: 56
+Route of the truck 8: 0 -> 23 -> 7 -> 43 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 75
+Number of clients: 3
+Truck Load: 78
+Route of the truck 9: 0 -> 25 -> 13 -> 41 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 126
+Number of clients: 6
+Truck Load: 65
+Route of the truck 10: 0 -> 15 -> 44 -> 42 -> 19 -> 40 -> 45 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 157
+Number of clients: 5
+Truck Load: 78
+Route of the truck 11: 0 -> 10 -> 30 -> 39 -> 33 -> 35 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 12 : 44
+Number of clients: 1
+Truck Load: 6
+Route of the truck 12: 0 -> 36 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 923
+
+
+Internal Swap in the route 10
+Internal Swap in the route 10
+Internal Swap in the route 11
+Internal Swap in the route 10
+Internal Swap in the route 10
+Invertion2opt in the route 1
+Invertion2opt in the route 10
+Invertion2opt in the route 10
+Invertion2opt in the route 10
+
+
+********** After VND ***********:
+
+Trucks Required: 12
+
+Total cost of the truck 1 : 49
+Number of clients: 6
+Truck Load: 80
+Route of the truck 1 : 0 -> : 0 -> 46 -> 12 -> 37 -> 17 -> 4 -> 47 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 51
+Number of clients: 5
+Truck Load: 68
+Route of the truck 2 : 0 -> : 0 -> 27 -> 1 -> 32 -> 11 -> 38 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 76
+Number of clients: 5
+Truck Load: 73
+Route of the truck 3 : 0 -> : 0 -> 6 -> 48 -> 8 -> 26 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 62
+Number of clients: 5
+Truck Load: 75
+Route of the truck 4 : 0 -> : 0 -> 5 -> 49 -> 9 -> 50 -> 16 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 43
+Number of clients: 2
+Truck Load: 62
+Route of the truck 5 : 0 -> : 0 -> 18 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 78
+Number of clients: 4
+Truck Load: 70
+Route of the truck 6 : 0 -> : 0 -> 2 -> 29 -> 21 -> 34 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 80
+Number of clients: 4
+Truck Load: 66
+Route of the truck 7 : 0 -> : 0 -> 22 -> 28 -> 3 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 77
+Number of clients: 4
+Truck Load: 56
+Route of the truck 8 : 0 -> : 0 -> 23 -> 7 -> 43 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 75
+Number of clients: 3
+Truck Load: 78
+Route of the truck 9 : 0 -> : 0 -> 25 -> 13 -> 41 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 111
+Number of clients: 6
+Truck Load: 65
+Route of the truck 10 : 0 -> : 0 -> 19 -> 40 -> 42 -> 44 -> 45 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 141
+Number of clients: 5
+Truck Load: 78
+Route of the truck 11 : 0 -> : 0 -> 35 -> 30 -> 39 -> 33 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 12 : 44
+Number of clients: 1
+Truck Load: 6
+Route of the truck 12 : 0 -> : 0 -> 36 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 887
+
+
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+
+
+**********  Naive CVRP  ********** 
+
+Trucks Required: 7
+
+Total cost of the truck 1 : 68
+Number of clients: 8
+Truck Load: 166
+Route of the truck 1: 0 -> 26 -> 12 -> 40 -> 17 -> 51 -> 6 -> 2 -> 30 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 75
+Number of clients: 8
+Truck Load: 170
+Route of the truck 2: 0 -> 4 -> 34 -> 46 -> 8 -> 35 -> 7 -> 53 -> 14 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 89
+Number of clients: 8
+Truck Load: 160
+Route of the truck 3: 0 -> 45 -> 29 -> 48 -> 47 -> 21 -> 28 -> 22 -> 1 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 101
+Number of clients: 8
+Truck Load: 166
+Route of the truck 4: 0 -> 52 -> 27 -> 13 -> 54 -> 19 -> 11 -> 38 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 102
+Number of clients: 8
+Truck Load: 161
+Route of the truck 5: 0 -> 33 -> 16 -> 3 -> 44 -> 32 -> 9 -> 39 -> 25 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 172
+Number of clients: 11
+Truck Load: 159
+Route of the truck 6: 0 -> 5 -> 37 -> 20 -> 15 -> 36 -> 42 -> 41 -> 43 -> 23 -> 49 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 3
+Truck Load: 60
+Route of the truck 7: 0 -> 50 -> 18 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 673
+
+
+Internal Swap in the route 2
+Internal Swap in the route 5
+Internal Swap in the route 5
+Internal Swap in the route 6
+
+
+********** After VND ***********:
+
+Trucks Required: 7
+
+Total cost of the truck 1 : 68
+Number of clients: 8
+Truck Load: 166
+Route of the truck 1 : 0 -> : 0 -> 26 -> 12 -> 40 -> 17 -> 51 -> 6 -> 2 -> 30 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 66
+Number of clients: 8
+Truck Load: 170
+Route of the truck 2 : 0 -> : 0 -> 4 -> 34 -> 46 -> 8 -> 35 -> 14 -> 53 -> 7 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 89
+Number of clients: 8
+Truck Load: 160
+Route of the truck 3 : 0 -> : 0 -> 45 -> 29 -> 48 -> 47 -> 21 -> 28 -> 22 -> 1 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 101
+Number of clients: 8
+Truck Load: 166
+Route of the truck 4 : 0 -> : 0 -> 52 -> 27 -> 13 -> 54 -> 19 -> 11 -> 38 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 92
+Number of clients: 8
+Truck Load: 161
+Route of the truck 5 : 0 -> : 0 -> 33 -> 16 -> 3 -> 44 -> 32 -> 25 -> 9 -> 39 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 165
+Number of clients: 11
+Truck Load: 159
+Route of the truck 6 : 0 -> : 0 -> 5 -> 15 -> 20 -> 37 -> 36 -> 42 -> 41 -> 43 -> 23 -> 49 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 66
+Number of clients: 3
+Truck Load: 60
+Route of the truck 7 : 0 -> : 0 -> 50 -> 18 -> 31 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 647
+
+

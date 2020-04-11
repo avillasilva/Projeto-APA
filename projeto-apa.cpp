@@ -6,9 +6,8 @@
 #include <sstream>
 #include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-#include <random>
 #include <ctime>
+#include <string.h>
 
 using namespace std;
 int dimension, capacity;
@@ -92,14 +91,13 @@ int applyExternalSwap(int num_trucks, int *routes[], int numClientsPerTruck[], i
 int main(int argc, char *argv[])
 {
     string instance;
-    time_t t;
-    cout << "Please, input the instance name: ";
-    getline(cin, instance);
-
     string trash;
     ifstream infile;
+    // infile.open(argv[1]);
+
+    cout << "Please, input the instance name: ";
+    getline(cin, instance);
     infile.open("instancias_teste/" + instance);
-    srand((unsigned)time(&t));
 
     if (infile.is_open())
     {
@@ -173,23 +171,30 @@ int main(int argc, char *argv[])
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
-                int mins[5], pos[5];
+                int min = 99999999, pos, current_min = 0;;
+                // Finds the nearest neighbor that has not been visited
+                int mins[5], positions[5];
                 for (int i = 0; i < 5; i++)
                 {
-                    mins[i] = 999999999;
-                }
-
-                // Finds the nearest neighbor that has not been visited
-                for (int i = 1; i < dimension; i++)
-                {
-                    for (int j = 0; j < 5; j++)
+                    min = 99999999;
+                    for (int j = 1; j < dimension; j++)
                     {
-                        if (current_pos != i && adjacency[current_pos][i] < mins[j] && !visited_clients[i])
+                        if (current_pos != j && adjacency[current_pos][j] < min && 
+                        adjacency[current_pos][j] > current_min && !visited_clients[j])
                         {
-                            mins[j] = adjacency[current_pos][i];
-                            pos[j] = i;
+                            min = adjacency[current_pos][j];
+                            pos = j;
                         }
                     }
+
+                    current_min = min;
+                    mins[i] = min;
+                    positions[i] = pos;
+                }
+
+                for (int i = 0; i < 5; i++)
+                {
+                    cout << mins[i] << "\n";
                 }
 
                 // mt19937 mt(1);
@@ -201,15 +206,15 @@ int main(int argc, char *argv[])
                 cout << trand << "\n";
 
                 // Put the client in the route of the truck and update the variables
-                if (demand[pos[trand]] <= capacity - trucks_load[num_trucks])
+                if (demand[positions[trand]] <= capacity - trucks_load[num_trucks])
                 {
-                    routes[num_trucks][count] = pos[trand];
+                    routes[num_trucks][count] = positions[trand];
                     cost[num_trucks] += mins[trand];
                     count++;
-                    trucks_load[num_trucks] += demand[pos[trand]];
-                    visited_clients[pos[trand]] = true;
+                    trucks_load[num_trucks] += demand[positions[trand]];
+                    visited_clients[positions[trand]] = true;
                     remaining_clients--;
-                    current_pos = pos[trand];
+                    current_pos = positions[trand];
                     numClientsPerTruck[num_trucks] = count;
                 }
                 // If the capacity of the current truck is not suficient, it will return to the warehouse
