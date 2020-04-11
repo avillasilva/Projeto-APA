@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
     ifstream infile;
     srand(time(NULL));
     infile.open(argv[1]);
+    cout.precision(10);
 
     clock_t start, end;
     double cpu_time_used;
@@ -110,32 +111,51 @@ int main(int argc, char *argv[])
                 
                 int trand = rand() % RAND_NUM;
                 // Put the client in the route of the truck and update the variables
-                if (demand[positions[trand]] <= capacity - trucks_load[num_trucks])
-                {
-                    routes[num_trucks][count] = positions[trand];
-                    cost[num_trucks] += mins[trand];
-                    count++;
-                    trucks_load[num_trucks] += demand[positions[trand]];
-                    visited_clients[positions[trand]] = true;
-                    remaining_clients--;
-                    current_pos = positions[trand];
-                    numClientsPerTruck[num_trucks] = count;
+                if(mins[trand] != 99999999){
+                    if (demand[positions[trand]] <= capacity - trucks_load[num_trucks])
+                    {
+                        routes[num_trucks][count] = positions[trand];
+                        cost[num_trucks] += mins[trand];
+                        count++;
+                        trucks_load[num_trucks] += demand[positions[trand]];
+                        visited_clients[positions[trand]] = true;
+                        remaining_clients--;
+                        current_pos = positions[trand];
+                        numClientsPerTruck[num_trucks] = count;
+                    }
+                    // If the capacity of the current truck is not suficient, it will return to the warehouse
+                    else
+                    {
+                        cost[num_trucks] += adjacency[current_pos][0];
+                        break;
+                    }
                 }
-                // If the capacity of the current truck is not suficient, it will return to the warehouse
-                else
-                {
-                    cost[num_trucks] += adjacency[current_pos][0];
-                    break;
-                }
+                
             }
         }
         end = clock();
         cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
-        cout << "Naive time: " << cpu_time_used << "\n";
+        cout << "Greedy time: "<< fixed << cpu_time_used << "\n";
 
         int totalCost = 0;
         int i = 0;
         int result;
+
+        cout << "\n\n********** Greedy Algorithm ***********:\n\n";
+        cout << "Trucks Required: " << num_trucks << "\n\n";
+        totalCost = 0;
+        for (int i = 1; i <= num_trucks; i++)
+        {
+            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Truck Load: " << trucks_load[i] << "\n";
+            cout << "Route of the truck " << i << " :";
+            totalCost += cost[i];
+            printRoute(routes[i], numClientsPerTruck[i]);
+            cout << "-----------------------------------------------------------------------------------------------------"
+                 << "\n";
+        }
+        cout << "Total Cost: " << totalCost << "\n\n\n";
 
         // VND
         start = clock();
@@ -162,28 +182,28 @@ int main(int argc, char *argv[])
         cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
         cout << "VND time: " << cpu_time_used << "\n";
 
-        // cout << "\n\n********** After VND ***********:\n\n";
-        // cout << "Trucks Required: " << num_trucks << "\n\n";
-        // totalCost = 0;
-        // for (int i = 1; i <= num_trucks; i++)
-        // {
-        //     cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
-        //     cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
-        //     cout << "Truck Load: " << trucks_load[i] << "\n";
-        //     cout << "Route of the truck " << i << " : 0 -> ";
-        //     totalCost += cost[i];
-        //     printRoute(routes[i], numClientsPerTruck[i]);
-        //     cout << "-----------------------------------------------------------------------------------------------------"
-        //          << "\n";
-        // }
-        // cout << "Total Cost: " << totalCost << "\n\n\n";
+        cout << "\n\n********** After VND ***********:\n\n";
+        cout << "Trucks Required: " << num_trucks << "\n\n";
+        totalCost = 0;
+        for (int i = 1; i <= num_trucks; i++)
+        {
+            cout << "Total cost of the truck " << i << " : " << cost[i] << "\n";
+            cout << "Number of clients: " << numClientsPerTruck[i] << "\n";
+            cout << "Truck Load: " << trucks_load[i] << "\n";
+            cout << "Route of the truck " << i << " :";
+            totalCost += cost[i];
+            printRoute(routes[i], numClientsPerTruck[i]);
+            cout << "-----------------------------------------------------------------------------------------------------"
+                 << "\n";
+        }
+        cout << "Total Cost: " << totalCost << "\n\n\n";
     }
 
     else
     {
         cout << "Unable to open file! Please, check the instance name.\n";
     }
-
+    cout << "============================================================================================================================================" << "\n";
     return 0;
 }
 
