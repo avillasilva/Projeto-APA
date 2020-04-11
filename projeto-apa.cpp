@@ -85,11 +85,10 @@ int main(int argc, char *argv[])
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
-                int min = 99999999, pos, current_min = 0;;
+                int min, pos, current_min = 0;
                 // Finds the nearest neighbor that has not been visited
-                int mins[5], positions[5];
-                int ct = 0;
-                for (int i = 0; i < 5; i++)
+                int mins[RAND_NUM], positions[RAND_NUM];
+                for (int i = 0; i < RAND_NUM; i++)
                 {
                     min = 99999999;
                     for (int j = 1; j < dimension; j++)
@@ -101,21 +100,13 @@ int main(int argc, char *argv[])
                             pos = j;
                         }
                     }
-
+        
                     current_min = min;
                     mins[i] = min;
                     positions[i] = pos;
                 }
-
-                for (int i = 0; i < 5; i++)
-                {
-                    cout << "mins: " << mins[i] << "\n";
-                    cout << "postions: " << positions[i] << "\n";
-                }
-
                 
                 int trand = rand() % RAND_NUM;
-                cout << "trand: " << trand << "\n";
                 // Put the client in the route of the truck and update the variables
                 if (demand[positions[trand]] <= capacity - trucks_load[num_trucks])
                 {
@@ -280,7 +271,6 @@ int applyInternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, in
 
                 if (newCost < cost[i])
                 {
-                    cout << "Internal Swap in the route " << i << "\n";
                     copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
                     cost[i] = newCost;
                     check = 1;
@@ -312,7 +302,6 @@ int applyInvertion2opt(int num_trucks, int *routes[], int *numClientsPerTruck, i
 
                 if (newCost < cost[i])
                 {
-                    cout << "Invertion2opt in the route " << i << "\n";
                     copyRoute(newRoute, routes[i], numClientsPerTruck[i]);
                     cost[i] = newCost;
                     check = 1;
@@ -352,7 +341,6 @@ int applyExternalSwap(int num_trucks, int *routes[], int *numClientsPerTruck, in
 
                         if (newCost1 + newCost2 < cost[i] + cost[j])
                         {
-                            cout << "External Swap in the routes " << i << " and " << j << "\n";
                             copyRoute(newRoute1, routes[i], numClientsPerTruck[i]);
                             copyRoute(newRoute2, routes[j], numClientsPerTruck[j]);
                             cost[i] = newCost1;
