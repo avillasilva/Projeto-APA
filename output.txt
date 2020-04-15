@@ -8,7 +8,7 @@ Trucks Required: 0
 Total Cost: 0
 
 
-VND time: 0.0000010000
+VND time: 0.0000020000
 
 
 ********** After VND ***********:
@@ -19,165 +19,165 @@ Total Cost: 0
 
 
 ============================================================================================================================================
-Greedy time: 0.0000270000
+Greedy time: 0.0000320000
 
 
 ********** Greedy Algorithm ***********:
 
-Trucks Required: 9
+Trucks Required: 10
 
-Total cost of the truck 1 : 24
+Total cost of the truck 1 : 42
+Number of clients: 2
+Truck Load: 27
+Route of the truck 1 :: 0 -> 1 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 24
 Number of clients: 1
 Truck Load: 31
-Route of the truck 1 :: 0 -> 6 -> 0
+Route of the truck 2 :: 0 -> 6 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 57
+Total cost of the truck 3 : 79
+Number of clients: 2
+Truck Load: 22
+Route of the truck 3 :: 0 -> 13 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 60
+Number of clients: 1
+Truck Load: 14
+Route of the truck 4 :: 0 -> 12 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 5 :: 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 57
 Number of clients: 2
 Truck Load: 30
-Route of the truck 2 :: 0 -> 11 -> 4 -> 0
+Route of the truck 6 :: 0 -> 11 -> 4 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 71
-Number of clients: 2
-Truck Load: 34
-Route of the truck 3 :: 0 -> 13 -> 8 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 83
-Number of clients: 3
-Truck Load: 33
-Route of the truck 4 :: 0 -> 12 -> 10 -> 15 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 66
-Number of clients: 2
-Truck Load: 35
-Route of the truck 5 :: 0 -> 1 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 44
+Total cost of the truck 7 : 44
 Number of clients: 1
 Truck Load: 15
-Route of the truck 6 :: 0 -> 7 -> 0
+Route of the truck 7 :: 0 -> 7 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 68
-Number of clients: 2
-Truck Load: 19
-Route of the truck 7 :: 0 -> 5 -> 9 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 42
+Total cost of the truck 8 : 64
 Number of clients: 1
+Truck Load: 28
+Route of the truck 8 :: 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 103
+Number of clients: 3
 Truck Load: 30
-Route of the truck 8 :: 0 -> 2 -> 0
+Route of the truck 9 :: 0 -> 5 -> 9 -> 15 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 31
+Total cost of the truck 10 : 31
 Number of clients: 1
 Truck Load: 19
-Route of the truck 9 :: 0 -> 14 -> 0
+Route of the truck 10 :: 0 -> 14 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 486
+Total Cost: 546
 
 
-VND time: 0.0000220000
+VND time: 0.0000200000
 
 
 ********** After VND ***********:
 
-Trucks Required: 9
+Trucks Required: 10
 
-Total cost of the truck 1 : 24
+Total cost of the truck 1 : 66
+Number of clients: 2
+Truck Load: 25
+Route of the truck 1 :: 0 -> 15 -> 12 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 24
 Number of clients: 1
 Truck Load: 31
-Route of the truck 1 :: 0 -> 6 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 57
-Number of clients: 2
-Truck Load: 30
-Route of the truck 2 :: 0 -> 11 -> 4 -> 0
+Route of the truck 2 :: 0 -> 6 -> 0
 -----------------------------------------------------------------------------------------------------
 Total cost of the truck 3 : 71
 Number of clients: 2
 Truck Load: 34
 Route of the truck 3 :: 0 -> 13 -> 8 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 67
-Number of clients: 3
-Truck Load: 33
-Route of the truck 4 :: 0 -> 10 -> 12 -> 15 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 89
-Number of clients: 2
-Truck Load: 24
-Route of the truck 5 :: 0 -> 9 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 28
+Total cost of the truck 4 : 28
 Number of clients: 1
 Truck Load: 19
-Route of the truck 6 :: 0 -> 1 -> 0
+Route of the truck 4 :: 0 -> 1 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 53
-Number of clients: 2
-Truck Load: 26
-Route of the truck 7 :: 0 -> 5 -> 7 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 42
+Total cost of the truck 5 : 42
 Number of clients: 1
 Truck Load: 30
-Route of the truck 8 :: 0 -> 2 -> 0
+Route of the truck 5 :: 0 -> 2 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 31
+Total cost of the truck 6 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 6 :: 0 -> 11 -> 4 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 42
+Number of clients: 1
+Truck Load: 8
+Route of the truck 7 :: 0 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 66
+Number of clients: 1
+Truck Load: 16
+Route of the truck 8 :: 0 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 68
+Number of clients: 3
+Truck Load: 34
+Route of the truck 9 :: 0 -> 7 -> 9 -> 5 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 31
 Number of clients: 1
 Truck Load: 19
-Route of the truck 9 :: 0 -> 14 -> 0
+Route of the truck 10 :: 0 -> 14 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 462
+Total Cost: 495
 
 
 ============================================================================================================================================
-Greedy time: 0.0000440000
+Greedy time: 0.0000310000
 
 
 ********** Greedy Algorithm ***********:
 
-Trucks Required: 3
+Trucks Required: 2
 
-Total cost of the truck 1 : 156
-Number of clients: 8
-Truck Load: 134
-Route of the truck 1 :: 0 -> 6 -> 5 -> 9 -> 15 -> 16 -> 10 -> 3 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 254
+Total cost of the truck 1 : 168
 Number of clients: 9
-Truck Load: 153
-Route of the truck 2 :: 0 -> 2 -> 8 -> 7 -> 18 -> 1 -> 13 -> 12 -> 11 -> 17 -> 0
+Truck Load: 159
+Route of the truck 1 :: 0 -> 1 -> 10 -> 8 -> 16 -> 9 -> 18 -> 3 -> 14 -> 6 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 22
-Number of clients: 1
-Truck Load: 23
-Route of the truck 3 :: 0 -> 4 -> 0
+Total cost of the truck 2 : 183
+Number of clients: 9
+Truck Load: 151
+Route of the truck 2 :: 0 -> 2 -> 13 -> 7 -> 5 -> 17 -> 12 -> 11 -> 4 -> 15 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 432
+Total Cost: 351
 
 
-VND time: 0.0002050000
+VND time: 0.0000530000
 
 
 ********** After VND ***********:
 
-Trucks Required: 3
+Trucks Required: 2
 
-Total cost of the truck 1 : 114
-Number of clients: 8
-Truck Load: 156
-Route of the truck 1 :: 0 -> 6 -> 13 -> 15 -> 9 -> 8 -> 3 -> 12 -> 10 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 134
+Total cost of the truck 1 : 121
 Number of clients: 9
-Truck Load: 131
-Route of the truck 2 :: 0 -> 18 -> 5 -> 7 -> 2 -> 16 -> 17 -> 14 -> 11 -> 1 -> 0
+Truck Load: 159
+Route of the truck 1 :: 0 -> 6 -> 18 -> 9 -> 8 -> 16 -> 3 -> 14 -> 10 -> 1 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 22
-Number of clients: 1
-Truck Load: 23
-Route of the truck 3 :: 0 -> 4 -> 0
+Total cost of the truck 2 : 183
+Number of clients: 9
+Truck Load: 151
+Route of the truck 2 :: 0 -> 2 -> 13 -> 7 -> 5 -> 17 -> 12 -> 11 -> 4 -> 15 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 270
+Total Cost: 304
 
 
 ============================================================================================================================================
@@ -186,231 +186,493 @@ Greedy time: 0.0000330000
 
 ********** Greedy Algorithm ***********:
 
-Trucks Required: 3
+Trucks Required: 2
 
-Total cost of the truck 1 : 131
-Number of clients: 8
-Truck Load: 149
-Route of the truck 1 :: 0 -> 6 -> 1 -> 3 -> 8 -> 10 -> 13 -> 16 -> 19 -> 0
+Total cost of the truck 1 : 184
+Number of clients: 12
+Truck Load: 160
+Route of the truck 1 :: 0 -> 1 -> 10 -> 15 -> 12 -> 8 -> 18 -> 9 -> 7 -> 14 -> 5 -> 19 -> 13 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 246
-Number of clients: 10
-Truck Load: 155
-Route of the truck 2 :: 0 -> 5 -> 17 -> 9 -> 7 -> 14 -> 15 -> 4 -> 12 -> 2 -> 11 -> 0
+Total cost of the truck 2 : 173
+Number of clients: 7
+Truck Load: 150
+Route of the truck 2 :: 0 -> 6 -> 3 -> 17 -> 11 -> 2 -> 16 -> 4 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 44
-Number of clients: 1
-Truck Load: 6
-Route of the truck 3 :: 0 -> 18 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 421
+Total Cost: 357
 
 
-VND time: 0.0000800000
+VND time: 0.0000510000
 
 
 ********** After VND ***********:
 
-Trucks Required: 3
+Trucks Required: 2
 
-Total cost of the truck 1 : 101
-Number of clients: 8
-Truck Load: 149
-Route of the truck 1 :: 0 -> 6 -> 19 -> 16 -> 13 -> 8 -> 3 -> 10 -> 1 -> 0
+Total cost of the truck 1 : 147
+Number of clients: 12
+Truck Load: 160
+Route of the truck 1 :: 0 -> 1 -> 10 -> 15 -> 12 -> 18 -> 8 -> 13 -> 9 -> 14 -> 5 -> 7 -> 19 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 147
-Number of clients: 10
-Truck Load: 155
-Route of the truck 2 :: 0 -> 2 -> 7 -> 5 -> 14 -> 9 -> 17 -> 12 -> 15 -> 11 -> 4 -> 0
+Total cost of the truck 2 : 136
+Number of clients: 7
+Truck Load: 150
+Route of the truck 2 :: 0 -> 4 -> 11 -> 3 -> 17 -> 2 -> 16 -> 6 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 44
-Number of clients: 1
-Truck Load: 6
-Route of the truck 3 :: 0 -> 18 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 292
+Total Cost: 283
 
 
 ============================================================================================================================================
-Greedy time: 0.0000410000
+Greedy time: 0.0000490000
 
 
 ********** Greedy Algorithm ***********:
 
-Trucks Required: 9
+Trucks Required: 10
 
-Total cost of the truck 1 : 43
-Number of clients: 2
-Truck Load: 35
-Route of the truck 1 :: 0 -> 21 -> 2 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 49
-Number of clients: 2
-Truck Load: 35
-Route of the truck 2 :: 0 -> 16 -> 4 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 62
-Number of clients: 2
-Truck Load: 34
-Route of the truck 3 :: 0 -> 20 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 83
+Total cost of the truck 1 : 62
 Number of clients: 3
-Truck Load: 35
-Route of the truck 4 :: 0 -> 10 -> 15 -> 3 -> 0
+Truck Load: 33
+Route of the truck 1 :: 0 -> 16 -> 1 -> 12 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 84
-Number of clients: 4
-Truck Load: 39
-Route of the truck 5 :: 0 -> 1 -> 5 -> 7 -> 13 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 89
-Number of clients: 2
-Truck Load: 34
-Route of the truck 6 :: 0 -> 8 -> 19 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 64
-Number of clients: 2
-Truck Load: 36
-Route of the truck 7 :: 0 -> 22 -> 17 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 81
-Number of clients: 2
-Truck Load: 36
-Route of the truck 8 :: 0 -> 18 -> 6 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 105
-Number of clients: 3
-Truck Load: 29
-Route of the truck 9 :: 0 -> 12 -> 9 -> 11 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 660
-
-
-VND time: 0.0000640000
-
-
-********** After VND ***********:
-
-Trucks Required: 9
-
-Total cost of the truck 1 : 43
-Number of clients: 2
-Truck Load: 35
-Route of the truck 1 :: 0 -> 21 -> 2 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 57
-Number of clients: 2
+Total cost of the truck 2 : 42
+Number of clients: 1
 Truck Load: 30
-Route of the truck 2 :: 0 -> 11 -> 4 -> 0
+Route of the truck 2 :: 0 -> 2 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 62
-Number of clients: 2
-Truck Load: 30
-Route of the truck 3 :: 0 -> 5 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 92
+Total cost of the truck 3 : 81
 Number of clients: 3
-Truck Load: 40
-Route of the truck 4 :: 0 -> 7 -> 9 -> 18 -> 0
+Truck Load: 37
+Route of the truck 3 :: 0 -> 4 -> 10 -> 13 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 96
-Number of clients: 4
-Truck Load: 36
-Route of the truck 5 :: 0 -> 13 -> 19 -> 3 -> 10 -> 0
+Total cost of the truck 4 : 53
+Number of clients: 3
+Truck Load: 31
+Route of the truck 4 :: 0 -> 21 -> 5 -> 7 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 78
+Number of clients: 3
+Truck Load: 37
+Route of the truck 5 :: 0 -> 11 -> 15 -> 6 -> 0
 -----------------------------------------------------------------------------------------------------
 Total cost of the truck 6 : 64
-Number of clients: 2
-Truck Load: 40
-Route of the truck 6 :: 0 -> 8 -> 16 -> 0
+Number of clients: 1
+Truck Load: 28
+Route of the truck 6 :: 0 -> 8 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 64
+Total cost of the truck 7 : 82
 Number of clients: 2
-Truck Load: 36
-Route of the truck 7 :: 0 -> 22 -> 17 -> 0
+Truck Load: 33
+Route of the truck 7 :: 0 -> 3 -> 18 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 35
+Total cost of the truck 8 : 73
 Number of clients: 2
 Truck Load: 34
-Route of the truck 8 :: 0 -> 20 -> 6 -> 0
+Route of the truck 8 :: 0 -> 9 -> 17 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 66
+Total cost of the truck 9 : 132
 Number of clients: 3
-Truck Load: 32
-Route of the truck 9 :: 0 -> 15 -> 12 -> 1 -> 0
+Truck Load: 35
+Route of the truck 9 :: 0 -> 22 -> 19 -> 14 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 579
+Total cost of the truck 10 : 16
+Number of clients: 1
+Truck Load: 15
+Route of the truck 10 :: 0 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 683
+
+
+VND time: 0.0000810000
+
+
+********** After VND ***********:
+
+Trucks Required: 10
+
+Total cost of the truck 1 : 38
+Number of clients: 3
+Truck Load: 38
+Route of the truck 1 :: 0 -> 6 -> 16 -> 1 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 42
+Number of clients: 1
+Truck Load: 30
+Route of the truck 2 :: 0 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 90
+Number of clients: 3
+Truck Load: 39
+Route of the truck 3 :: 0 -> 18 -> 19 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 63
+Number of clients: 3
+Truck Load: 36
+Route of the truck 4 :: 0 -> 20 -> 7 -> 13 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 67
+Number of clients: 3
+Truck Load: 33
+Route of the truck 5 :: 0 -> 10 -> 12 -> 15 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 64
+Number of clients: 1
+Truck Load: 28
+Route of the truck 6 :: 0 -> 8 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 57
+Number of clients: 2
+Truck Load: 30
+Route of the truck 7 :: 0 -> 11 -> 4 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 73
+Number of clients: 2
+Truck Load: 34
+Route of the truck 8 :: 0 -> 9 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 67
+Number of clients: 3
+Truck Load: 40
+Route of the truck 9 :: 0 -> 5 -> 14 -> 22 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 4
+Number of clients: 1
+Truck Load: 5
+Route of the truck 10 :: 0 -> 21 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 565
 
 
 ============================================================================================================================================
-Greedy time: 0.0000790000
+Greedy time: 0.0000830000
 
 
 ********** Greedy Algorithm ***********:
 
 Trucks Required: 5
 
-Total cost of the truck 1 : 150
-Number of clients: 10
-Truck Load: 144
-Route of the truck 1 :: 0 -> 12 -> 11 -> 1 -> 32 -> 16 -> 30 -> 10 -> 38 -> 27 -> 22 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 158
-Number of clients: 8
+Total cost of the truck 1 : 163
+Number of clients: 11
 Truck Load: 141
-Route of the truck 2 :: 0 -> 18 -> 4 -> 37 -> 33 -> 39 -> 9 -> 5 -> 42 -> 0
+Route of the truck 1 :: 0 -> 32 -> 1 -> 28 -> 31 -> 3 -> 29 -> 9 -> 34 -> 39 -> 30 -> 10 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 109
-Number of clients: 6
-Truck Load: 130
-Route of the truck 3 :: 0 -> 2 -> 20 -> 35 -> 3 -> 8 -> 23 -> 0
+Total cost of the truck 2 : 137
+Number of clients: 9
+Truck Load: 148
+Route of the truck 2 :: 0 -> 11 -> 38 -> 2 -> 16 -> 22 -> 6 -> 24 -> 14 -> 27 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 300
-Number of clients: 10
-Truck Load: 150
-Route of the truck 4 :: 0 -> 14 -> 13 -> 40 -> 17 -> 41 -> 44 -> 21 -> 15 -> 25 -> 26 -> 0
+Total cost of the truck 3 : 142
+Number of clients: 9
+Truck Load: 144
+Route of the truck 3 :: 0 -> 4 -> 42 -> 44 -> 17 -> 5 -> 37 -> 19 -> 13 -> 18 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 374
-Number of clients: 10
-Truck Load: 127
-Route of the truck 5 :: 0 -> 24 -> 28 -> 36 -> 6 -> 31 -> 34 -> 7 -> 43 -> 19 -> 29 -> 0
+Total cost of the truck 4 : 224
+Number of clients: 7
+Truck Load: 149
+Route of the truck 4 :: 0 -> 7 -> 26 -> 20 -> 8 -> 12 -> 23 -> 41 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 1091
+Total cost of the truck 5 : 388
+Number of clients: 8
+Truck Load: 110
+Route of the truck 5 :: 0 -> 15 -> 25 -> 33 -> 36 -> 43 -> 40 -> 35 -> 21 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 1054
 
 
-VND time: 0.0009010000
+VND time: 0.0009460000
 
 
 ********** After VND ***********:
 
 Trucks Required: 5
 
-Total cost of the truck 1 : 119
-Number of clients: 10
-Truck Load: 147
-Route of the truck 1 :: 0 -> 32 -> 3 -> 29 -> 16 -> 21 -> 34 -> 30 -> 9 -> 38 -> 11 -> 0
+Total cost of the truck 1 : 143
+Number of clients: 11
+Truck Load: 143
+Route of the truck 1 :: 0 -> 27 -> 1 -> 22 -> 28 -> 3 -> 21 -> 34 -> 39 -> 10 -> 30 -> 9 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 108
-Number of clients: 8
-Truck Load: 139
-Route of the truck 2 :: 0 -> 5 -> 10 -> 39 -> 33 -> 15 -> 44 -> 4 -> 18 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 101
-Number of clients: 6
-Truck Load: 119
-Route of the truck 3 :: 0 -> 2 -> 20 -> 35 -> 36 -> 8 -> 27 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 138
-Number of clients: 10
-Truck Load: 147
-Route of the truck 4 :: 0 -> 37 -> 17 -> 42 -> 19 -> 40 -> 41 -> 13 -> 25 -> 14 -> 1 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 127
-Number of clients: 10
+Total cost of the truck 2 : 130
+Number of clients: 9
 Truck Load: 140
-Route of the truck 5 :: 0 -> 6 -> 23 -> 24 -> 43 -> 7 -> 26 -> 31 -> 28 -> 22 -> 12 -> 0
+Route of the truck 2 :: 0 -> 11 -> 16 -> 29 -> 2 -> 32 -> 23 -> 43 -> 24 -> 14 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 593
+Total cost of the truck 3 : 130
+Number of clients: 9
+Truck Load: 131
+Route of the truck 3 :: 0 -> 17 -> 37 -> 33 -> 15 -> 44 -> 42 -> 40 -> 19 -> 18 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 99
+Number of clients: 7
+Truck Load: 129
+Route of the truck 4 :: 0 -> 6 -> 7 -> 26 -> 8 -> 38 -> 5 -> 12 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 166
+Number of clients: 8
+Truck Load: 149
+Route of the truck 5 :: 0 -> 4 -> 41 -> 13 -> 25 -> 31 -> 36 -> 35 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 668
+
+
+============================================================================================================================================
+Greedy time: 0.0001080000
+
+
+********** Greedy Algorithm ***********:
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 47
+Number of clients: 4
+Truck Load: 74
+Route of the truck 1 :: 0 -> 4 -> 34 -> 7 -> 35 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 90
+Number of clients: 5
+Truck Load: 100
+Route of the truck 2 :: 0 -> 12 -> 9 -> 25 -> 31 -> 39 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 85
+Number of clients: 6
+Truck Load: 98
+Route of the truck 3 :: 0 -> 46 -> 26 -> 17 -> 44 -> 3 -> 49 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 93
+Number of clients: 6
+Truck Load: 95
+Route of the truck 4 :: 0 -> 8 -> 27 -> 5 -> 29 -> 15 -> 48 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 99
+Number of clients: 5
+Truck Load: 81
+Route of the truck 5 :: 0 -> 2 -> 22 -> 1 -> 16 -> 23 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 86
+Number of clients: 4
+Truck Load: 90
+Route of the truck 6 :: 0 -> 33 -> 41 -> 28 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 120
+Number of clients: 5
+Truck Load: 95
+Route of the truck 7 :: 0 -> 13 -> 47 -> 30 -> 21 -> 37 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 125
+Number of clients: 4
+Truck Load: 94
+Route of the truck 8 :: 0 -> 19 -> 38 -> 32 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 132
+Number of clients: 3
+Truck Load: 76
+Route of the truck 9 :: 0 -> 11 -> 45 -> 43 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 224
+Number of clients: 5
+Truck Load: 93
+Route of the truck 10 :: 0 -> 14 -> 10 -> 18 -> 36 -> 42 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 88
+Number of clients: 2
+Truck Load: 55
+Route of the truck 11 :: 0 -> 20 -> 40 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 1189
+
+
+VND time: 0.0006500000
+
+
+********** After VND ***********:
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 74
+Number of clients: 4
+Truck Load: 93
+Route of the truck 1 :: 0 -> 11 -> 14 -> 19 -> 35 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 80
+Number of clients: 5
+Truck Load: 100
+Route of the truck 2 :: 0 -> 32 -> 18 -> 25 -> 9 -> 12 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 87
+Number of clients: 6
+Truck Load: 85
+Route of the truck 3 :: 0 -> 16 -> 23 -> 49 -> 24 -> 44 -> 3 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 84
+Number of clients: 6
+Truck Load: 98
+Route of the truck 4 :: 0 -> 48 -> 37 -> 20 -> 15 -> 5 -> 29 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 85
+Number of clients: 5
+Truck Load: 85
+Route of the truck 5 :: 0 -> 28 -> 22 -> 42 -> 41 -> 43 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 56
+Number of clients: 4
+Truck Load: 90
+Route of the truck 6 :: 0 -> 2 -> 1 -> 33 -> 6 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 88
+Number of clients: 5
+Truck Load: 93
+Route of the truck 7 :: 0 -> 30 -> 21 -> 47 -> 36 -> 13 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 85
+Number of clients: 4
+Truck Load: 91
+Route of the truck 8 :: 0 -> 38 -> 10 -> 31 -> 39 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 36
+Number of clients: 3
+Truck Load: 68
+Route of the truck 9 :: 0 -> 4 -> 45 -> 27 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 40
+Number of clients: 5
+Truck Load: 95
+Route of the truck 10 :: 0 -> 34 -> 46 -> 8 -> 7 -> 26 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 29
+Number of clients: 2
+Truck Load: 53
+Route of the truck 11 :: 0 -> 17 -> 40 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 744
+
+
+============================================================================================================================================
+Greedy time: 0.0001060000
+
+
+********** Greedy Algorithm ***********:
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 48
+Number of clients: 4
+Truck Load: 66
+Route of the truck 1 :: 0 -> 12 -> 47 -> 37 -> 17 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 83
+Number of clients: 5
+Truck Load: 67
+Route of the truck 2 :: 0 -> 11 -> 1 -> 27 -> 23 -> 24 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 78
+Number of clients: 5
+Truck Load: 75
+Route of the truck 3 :: 0 -> 5 -> 9 -> 49 -> 16 -> 50 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 119
+Number of clients: 6
+Truck Load: 78
+Route of the truck 4 :: 0 -> 38 -> 34 -> 21 -> 35 -> 36 -> 29 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 70
+Number of clients: 4
+Truck Load: 78
+Route of the truck 5 :: 0 -> 32 -> 22 -> 20 -> 2 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 49
+Number of clients: 2
+Truck Load: 69
+Route of the truck 6 :: 0 -> 18 -> 25 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 162
+Number of clients: 7
+Truck Load: 75
+Route of the truck 7 :: 0 -> 14 -> 4 -> 46 -> 44 -> 19 -> 15 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 161
+Number of clients: 6
+Truck Load: 79
+Route of the truck 8 :: 0 -> 48 -> 26 -> 7 -> 31 -> 43 -> 28 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 142
+Number of clients: 4
+Truck Load: 67
+Route of the truck 9 :: 0 -> 41 -> 45 -> 40 -> 13 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 203
+Number of clients: 4
+Truck Load: 67
+Route of the truck 10 :: 0 -> 6 -> 33 -> 3 -> 42 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 137
+Number of clients: 3
+Truck Load: 56
+Route of the truck 11 :: 0 -> 39 -> 8 -> 30 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 1252
+
+
+VND time: 0.0005500000
+
+
+********** After VND ***********:
+
+Trucks Required: 11
+
+Total cost of the truck 1 : 43
+Number of clients: 4
+Truck Load: 66
+Route of the truck 1 :: 0 -> 12 -> 17 -> 4 -> 47 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 67
+Number of clients: 5
+Truck Load: 71
+Route of the truck 2 :: 0 -> 11 -> 32 -> 1 -> 48 -> 23 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 62
+Number of clients: 5
+Truck Load: 75
+Route of the truck 3 :: 0 -> 5 -> 49 -> 9 -> 50 -> 16 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 98
+Number of clients: 6
+Truck Load: 79
+Route of the truck 4 :: 0 -> 38 -> 34 -> 21 -> 29 -> 3 -> 22 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 100
+Number of clients: 4
+Truck Load: 74
+Route of the truck 5 :: 0 -> 8 -> 36 -> 35 -> 20 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 58
+Number of clients: 2
+Truck Load: 64
+Route of the truck 6 :: 0 -> 18 -> 13 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 85
+Number of clients: 7
+Truck Load: 78
+Route of the truck 7 :: 0 -> 37 -> 44 -> 15 -> 45 -> 33 -> 10 -> 46 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 8 : 106
+Number of clients: 6
+Truck Load: 72
+Route of the truck 8 :: 0 -> 24 -> 43 -> 7 -> 26 -> 31 -> 28 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 9 : 93
+Number of clients: 4
+Truck Load: 56
+Route of the truck 9 :: 0 -> 41 -> 19 -> 40 -> 42 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 10 : 56
+Number of clients: 4
+Truck Load: 79
+Route of the truck 10 :: 0 -> 27 -> 6 -> 14 -> 25 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 11 : 95
+Number of clients: 3
+Truck Load: 63
+Route of the truck 11 :: 0 -> 2 -> 30 -> 39 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 863
 
 
 ============================================================================================================================================
@@ -419,361 +681,89 @@ Greedy time: 0.0001130000
 
 ********** Greedy Algorithm ***********:
 
-Trucks Required: 11
-
-Total cost of the truck 1 : 54
-Number of clients: 4
-Truck Load: 93
-Route of the truck 1 :: 0 -> 26 -> 4 -> 6 -> 2 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 73
-Number of clients: 5
-Truck Load: 92
-Route of the truck 2 :: 0 -> 7 -> 46 -> 45 -> 34 -> 35 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 69
-Number of clients: 5
-Truck Load: 93
-Route of the truck 3 :: 0 -> 30 -> 48 -> 5 -> 27 -> 29 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 67
-Number of clients: 4
-Truck Load: 84
-Route of the truck 4 :: 0 -> 12 -> 32 -> 9 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 78
-Number of clients: 4
-Truck Load: 91
-Route of the truck 5 :: 0 -> 17 -> 44 -> 24 -> 33 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 99
-Number of clients: 4
-Truck Load: 92
-Route of the truck 6 :: 0 -> 16 -> 40 -> 38 -> 39 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 128
-Number of clients: 5
-Truck Load: 92
-Route of the truck 7 :: 0 -> 13 -> 20 -> 21 -> 37 -> 8 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 201
-Number of clients: 7
-Truck Load: 97
-Route of the truck 8 :: 0 -> 1 -> 23 -> 41 -> 47 -> 22 -> 36 -> 19 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 90
-Number of clients: 3
-Truck Load: 94
-Route of the truck 9 :: 0 -> 11 -> 14 -> 10 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 10 : 253
-Number of clients: 5
-Truck Load: 73
-Route of the truck 10 :: 0 -> 25 -> 43 -> 31 -> 42 -> 49 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 11 : 135
-Number of clients: 3
-Truck Load: 50
-Route of the truck 11 :: 0 -> 28 -> 18 -> 15 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 1247
-
-
-VND time: 0.0005810000
-
-
-********** After VND ***********:
-
-Trucks Required: 11
-
-Total cost of the truck 1 : 56
-Number of clients: 4
-Truck Load: 94
-Route of the truck 1 :: 0 -> 26 -> 4 -> 33 -> 6 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 41
-Number of clients: 5
-Truck Load: 87
-Route of the truck 2 :: 0 -> 34 -> 46 -> 8 -> 35 -> 7 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 53
-Number of clients: 5
-Truck Load: 97
-Route of the truck 3 :: 0 -> 30 -> 48 -> 5 -> 29 -> 45 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 49
-Number of clients: 4
-Truck Load: 98
-Route of the truck 4 :: 0 -> 17 -> 44 -> 32 -> 40 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 69
-Number of clients: 4
-Truck Load: 62
-Route of the truck 5 :: 0 -> 3 -> 24 -> 49 -> 16 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 77
-Number of clients: 4
-Truck Load: 83
-Route of the truck 6 :: 0 -> 12 -> 39 -> 31 -> 10 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 85
-Number of clients: 5
-Truck Load: 75
-Route of the truck 7 :: 0 -> 47 -> 36 -> 37 -> 20 -> 15 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 130
-Number of clients: 7
-Truck Load: 100
-Route of the truck 8 :: 0 -> 43 -> 41 -> 42 -> 22 -> 27 -> 13 -> 19 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 74
-Number of clients: 3
-Truck Load: 92
-Route of the truck 9 :: 0 -> 14 -> 11 -> 38 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 10 : 111
-Number of clients: 5
-Truck Load: 80
-Route of the truck 10 :: 0 -> 9 -> 25 -> 18 -> 23 -> 1 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 11 : 61
-Number of clients: 3
-Truck Load: 83
-Route of the truck 11 :: 0 -> 21 -> 28 -> 2 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 806
-
-
-============================================================================================================================================
-Greedy time: 0.0001200000
-
-
-********** Greedy Algorithm ***********:
-
-Trucks Required: 12
-
-Total cost of the truck 1 : 54
-Number of clients: 4
-Truck Load: 55
-Route of the truck 1 :: 0 -> 46 -> 5 -> 9 -> 49 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 78
-Number of clients: 4
-Truck Load: 65
-Route of the truck 2 :: 0 -> 11 -> 16 -> 34 -> 10 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 78
-Number of clients: 5
-Truck Load: 76
-Route of the truck 3 :: 0 -> 6 -> 23 -> 7 -> 43 -> 27 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 53
-Number of clients: 3
-Truck Load: 55
-Route of the truck 4 :: 0 -> 47 -> 4 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 56
-Number of clients: 3
-Truck Load: 73
-Route of the truck 5 :: 0 -> 18 -> 12 -> 17 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 95
-Number of clients: 5
-Truck Load: 71
-Route of the truck 6 :: 0 -> 2 -> 3 -> 31 -> 26 -> 1 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 172
-Number of clients: 7
-Truck Load: 79
-Route of the truck 7 :: 0 -> 22 -> 48 -> 32 -> 21 -> 38 -> 15 -> 19 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 156
-Number of clients: 6
-Truck Load: 71
-Route of the truck 8 :: 0 -> 8 -> 29 -> 50 -> 37 -> 42 -> 45 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 118
-Number of clients: 4
-Truck Load: 70
-Route of the truck 9 :: 0 -> 30 -> 35 -> 36 -> 20 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 10 : 220
-Number of clients: 5
-Truck Load: 79
-Route of the truck 10 :: 0 -> 33 -> 40 -> 24 -> 44 -> 13 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 11 : 171
-Number of clients: 3
-Truck Load: 56
-Route of the truck 11 :: 0 -> 28 -> 25 -> 39 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 12 : 30
-Number of clients: 1
-Truck Load: 27
-Route of the truck 12 :: 0 -> 41 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 1281
-
-
-VND time: 0.0006960000
-
-
-********** After VND ***********:
-
-Trucks Required: 12
-
-Total cost of the truck 1 : 82
-Number of clients: 4
-Truck Load: 72
-Route of the truck 1 :: 0 -> 39 -> 30 -> 49 -> 5 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 66
-Number of clients: 4
-Truck Load: 66
-Route of the truck 2 :: 0 -> 16 -> 50 -> 34 -> 38 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 75
-Number of clients: 5
-Truck Load: 78
-Route of the truck 3 :: 0 -> 27 -> 48 -> 7 -> 43 -> 23 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 54
-Number of clients: 3
-Truck Load: 46
-Route of the truck 4 :: 0 -> 6 -> 24 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 38
-Number of clients: 3
-Truck Load: 63
-Route of the truck 5 :: 0 -> 12 -> 4 -> 47 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 77
-Number of clients: 5
-Truck Load: 67
-Route of the truck 6 :: 0 -> 32 -> 28 -> 31 -> 26 -> 8 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 101
-Number of clients: 7
-Truck Load: 80
-Route of the truck 7 :: 0 -> 1 -> 22 -> 2 -> 9 -> 10 -> 15 -> 37 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 8 : 114
-Number of clients: 6
-Truck Load: 69
-Route of the truck 8 :: 0 -> 11 -> 29 -> 21 -> 33 -> 45 -> 17 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 9 : 90
-Number of clients: 4
-Truck Load: 67
-Route of the truck 9 :: 0 -> 20 -> 35 -> 36 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 10 : 103
-Number of clients: 5
-Truck Load: 68
-Route of the truck 10 :: 0 -> 13 -> 40 -> 19 -> 42 -> 44 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 11 : 52
-Number of clients: 3
-Truck Load: 74
-Route of the truck 11 :: 0 -> 25 -> 18 -> 46 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 12 : 30
-Number of clients: 1
-Truck Load: 27
-Route of the truck 12 :: 0 -> 41 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 882
-
-
-============================================================================================================================================
-Greedy time: 0.0001220000
-
-
-********** Greedy Algorithm ***********:
-
 Trucks Required: 7
 
-Total cost of the truck 1 : 121
+Total cost of the truck 1 : 98
+Number of clients: 8
+Truck Load: 154
+Route of the truck 1 :: 0 -> 4 -> 34 -> 27 -> 52 -> 29 -> 15 -> 48 -> 21 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 101
+Number of clients: 9
+Truck Load: 169
+Route of the truck 2 :: 0 -> 17 -> 51 -> 40 -> 3 -> 44 -> 49 -> 24 -> 32 -> 12 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 151
 Number of clients: 9
 Truck Load: 166
-Route of the truck 1 :: 0 -> 26 -> 4 -> 6 -> 51 -> 44 -> 9 -> 25 -> 39 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 107
-Number of clients: 7
-Truck Load: 164
-Route of the truck 2 :: 0 -> 12 -> 32 -> 50 -> 24 -> 1 -> 33 -> 2 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 141
-Number of clients: 10
-Truck Load: 161
-Route of the truck 3 :: 0 -> 8 -> 7 -> 34 -> 52 -> 27 -> 13 -> 37 -> 47 -> 15 -> 20 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 4 : 181
-Number of clients: 9
-Truck Load: 170
-Route of the truck 4 :: 0 -> 29 -> 30 -> 46 -> 45 -> 28 -> 41 -> 16 -> 43 -> 23 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 168
-Number of clients: 7
-Truck Load: 152
-Route of the truck 5 :: 0 -> 48 -> 21 -> 17 -> 10 -> 53 -> 19 -> 5 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 381
-Number of clients: 9
-Truck Load: 158
-Route of the truck 6 :: 0 -> 40 -> 18 -> 49 -> 36 -> 35 -> 22 -> 31 -> 11 -> 42 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 76
-Number of clients: 3
-Truck Load: 71
-Route of the truck 7 :: 0 -> 38 -> 54 -> 14 -> 0
------------------------------------------------------------------------------------------------------
-Total Cost: 1175
-
-
-VND time: 0.0014310000
-
-
-********** After VND ***********:
-
-Trucks Required: 7
-
-Total cost of the truck 1 : 104
-Number of clients: 9
-Truck Load: 166
-Route of the truck 1 :: 0 -> 4 -> 34 -> 26 -> 12 -> 39 -> 9 -> 25 -> 18 -> 3 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 2 : 68
-Number of clients: 7
-Truck Load: 163
-Route of the truck 2 :: 0 -> 17 -> 40 -> 32 -> 44 -> 16 -> 33 -> 6 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 3 : 104
-Number of clients: 10
-Truck Load: 170
-Route of the truck 3 :: 0 -> 7 -> 8 -> 46 -> 52 -> 27 -> 13 -> 15 -> 20 -> 37 -> 48 -> 0
+Route of the truck 3 :: 0 -> 6 -> 1 -> 43 -> 22 -> 2 -> 28 -> 33 -> 42 -> 23 -> 0
 -----------------------------------------------------------------------------------------------------
 Total cost of the truck 4 : 128
-Number of clients: 9
-Truck Load: 166
-Route of the truck 4 :: 0 -> 5 -> 36 -> 47 -> 21 -> 28 -> 43 -> 41 -> 23 -> 1 -> 0
+Number of clients: 8
+Truck Load: 168
+Route of the truck 4 :: 0 -> 7 -> 46 -> 26 -> 19 -> 8 -> 14 -> 38 -> 53 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 5 : 100
+Total cost of the truck 5 : 204
+Number of clients: 10
+Truck Load: 166
+Route of the truck 5 :: 0 -> 16 -> 18 -> 25 -> 39 -> 31 -> 35 -> 30 -> 36 -> 37 -> 45 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 270
 Number of clients: 7
-Truck Load: 140
-Route of the truck 5 :: 0 -> 30 -> 29 -> 45 -> 19 -> 11 -> 53 -> 35 -> 0
+Truck Load: 143
+Route of the truck 6 :: 0 -> 47 -> 20 -> 54 -> 13 -> 50 -> 11 -> 41 -> 0
 -----------------------------------------------------------------------------------------------------
-Total cost of the truck 6 : 164
-Number of clients: 9
-Truck Load: 166
-Route of the truck 6 :: 0 -> 51 -> 2 -> 22 -> 42 -> 49 -> 24 -> 50 -> 31 -> 10 -> 0
------------------------------------------------------------------------------------------------------
-Total cost of the truck 7 : 76
+Total cost of the truck 7 : 123
 Number of clients: 3
-Truck Load: 71
-Route of the truck 7 :: 0 -> 38 -> 54 -> 14 -> 0
+Truck Load: 76
+Route of the truck 7 :: 0 -> 10 -> 5 -> 9 -> 0
 -----------------------------------------------------------------------------------------------------
-Total Cost: 744
+Total Cost: 1075
+
+
+VND time: 0.0020510000
+
+
+********** After VND ***********:
+
+Trucks Required: 7
+
+Total cost of the truck 1 : 65
+Number of clients: 8
+Truck Load: 163
+Route of the truck 1 :: 0 -> 30 -> 48 -> 5 -> 29 -> 45 -> 27 -> 52 -> 4 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 2 : 90
+Number of clients: 9
+Truck Load: 161
+Route of the truck 2 :: 0 -> 17 -> 51 -> 3 -> 44 -> 32 -> 50 -> 24 -> 49 -> 16 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 3 : 106
+Number of clients: 9
+Truck Load: 162
+Route of the truck 3 :: 0 -> 2 -> 28 -> 22 -> 1 -> 42 -> 41 -> 43 -> 23 -> 33 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 4 : 68
+Number of clients: 8
+Truck Load: 154
+Route of the truck 4 :: 0 -> 26 -> 7 -> 35 -> 53 -> 14 -> 19 -> 8 -> 46 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 5 : 160
+Number of clients: 10
+Truck Load: 170
+Route of the truck 5 :: 0 -> 12 -> 39 -> 9 -> 25 -> 18 -> 6 -> 37 -> 20 -> 15 -> 34 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 6 : 135
+Number of clients: 7
+Truck Load: 148
+Route of the truck 6 :: 0 -> 21 -> 47 -> 36 -> 13 -> 54 -> 11 -> 38 -> 0
+-----------------------------------------------------------------------------------------------------
+Total cost of the truck 7 : 79
+Number of clients: 3
+Truck Load: 84
+Route of the truck 7 :: 0 -> 40 -> 31 -> 10 -> 0
+-----------------------------------------------------------------------------------------------------
+Total Cost: 703
 
 
 ============================================================================================================================================
