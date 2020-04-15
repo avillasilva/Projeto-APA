@@ -2,7 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    string instance;
     string trash;
     ifstream infile;
     srand(time(NULL));
@@ -11,10 +10,6 @@ int main(int argc, char *argv[])
 
     clock_t start, end;
     double cpu_time_used;
-
-    // cout << "Please, input the instance name: ";
-    // getline(cin, instance);
-    // infile.open("instancias_teste/" + instance);
 
     if (infile.is_open())
     {
@@ -58,6 +53,7 @@ int main(int argc, char *argv[])
         {
             routes[i] = new int[dimension];
         }
+        
         trucks_load = new int[dimension];
         cost = new int[dimension]; // Stores the cost of each truck
         int remaining_clients = dimension - 1;
@@ -84,7 +80,6 @@ int main(int argc, char *argv[])
             num_trucks++;
             current_pos = 0;
             count = 0;
-            int pos = 0;
             while (trucks_load[num_trucks] <= capacity && remaining_clients > 0)
             {
                 // The minimun distance begins with a large to number to avoid errors
